@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>شكراً لطلبك | بازار بلس</title>
+  <meta name="description" content="تم استلام طلبك بنجاح وسيتصل بك فريقنا قريباً لتأكيد التوصيل">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Promo Banner -->
+  <div class="promo-bar">
+    ⚡ تم استلام طلبك بنجاح!
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="Logo.png" alt="بازار بلس" class="logo-img">
+      <span class="logo-text">بازار بلس</span>
+    </div>
+  </header>
+
+  <!-- Success Hero (Double Bezel) -->
+  <main class="story-container" style="padding: 24px 20px;">
+    
+    <div class="outer-bezel">
+      <div class="inner-core" style="text-align: center; padding: 32px 20px; display: flex; flex-direction: column; gap: 16px; align-items: center;">
+        
+        <!-- Large Checkmark Icon -->
+        <div style="width: 72px; height: 72px; background: rgba(16, 185, 129, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(--color-success); border: 1px solid rgba(16, 185, 129, 0.25);">
+          <svg style="width: 36px; height: 36px; fill: currentColor;" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+
+        <h1 class="hero-title" style="font-size: 1.55rem; color: var(--color-success);">شكراً لطلبك!</h1>
+        <h2 style="font-size: 1.1rem; font-weight: 700; color: var(--color-light);">فريقنا سيتصل بك قريباً لتأكيد طلبك ✅</h2>
+        
+        <p style="font-size: 0.9rem; color: var(--color-gray-400); line-height: 1.6;">
+          يرجى إبقاء هاتفك قريباً ومفتوحاً للرد على مكالمة مندوب التوصيل لتأكيد موعد الشحن.
+        </p>
+      </div>
+    </div>
+
+    <!-- Receipt Details (Double Bezel) -->
+    <div class="outer-bezel" style="margin-top: 10px;">
+      <div class="inner-core" style="padding: 20px;">
+        <h3 style="font-size: 1rem; color: var(--color-accent); border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 8px; margin-bottom: 12px;">ملخص الطلب الخاص بك</h3>
+        
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.9rem; color: var(--color-gray-400);">المنتج الأساسي:</span>
+            <strong id="receiptProduct" style="font-size: 0.95rem; color: var(--color-light);">مشد الكاحل الرياضي</strong>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.9rem; color: var(--color-gray-400);">الكمية المطلوبة:</span>
+            <strong id="receiptQty" style="font-size: 0.95rem; color: var(--color-light);">1</strong>
+          </div>
+
+          <!-- Upsell Item (Shown if accepted) -->
+          <div id="receiptUpsellRow" style="display: none; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.9rem; color: var(--color-gray-400);">العرض الخاص الإضافي:</span>
+            <strong id="receiptUpsell" style="font-size: 0.95rem; color: var(--color-success);">مشد المعصم</strong>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center;">
+            <span style="font-size: 0.9rem; color: var(--color-gray-400);">مدينة الشحن:</span>
+            <strong id="receiptCity" style="font-size: 0.95rem; color: var(--color-light);">طرابلس</strong>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255, 255, 255, 0.08); padding-top: 12px; margin-top: 4px;">
+            <span style="font-size: 0.95rem; color: var(--color-light); font-weight: 700;">إجمالي المبلغ عند الاستلام:</span>
+            <strong id="receiptTotal" style="font-size: 1.35rem; color: var(--color-accent); font-weight: 900;">0 د.ل</strong>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Actions Box -->
+    <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 16px;">
+      <a href="index.html" class="btn-primary">
+        <span>← العودة لمتجر بازار بلس</span>
+      </a>
+    </div>
+
+  </main>
+
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Run receipt loader and lead tracker
+    initThankYouPage();
+  </script>
+</body>
+</html>

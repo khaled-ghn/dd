@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>لوحة إدارة المتجر | بازار بلس</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <style>
+    body { padding-bottom: 40px; }
+    .admin-shell { display: grid; grid-template-columns: 1fr; gap: 24px; margin: 24px auto 60px; max-width: 1200px; }
+    .panel { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 18px; padding: 18px; }
+    .panel h2 { font-size: 1.05rem; color: var(--color-accent); margin-bottom: 8px; }
+    .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    label { display: block; font-size: 0.85rem; color: var(--color-gray-300); margin-bottom: 4px; }
+    input, textarea, select { width: 100%; border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; background: rgba(8,10,14,0.8); color: var(--color-light); padding: 10px 12px; font-family: inherit; font-size: 0.95rem; }
+    textarea { min-height: 70px; resize: vertical; }
+    .muted { color: var(--color-gray-400); font-size: 0.82rem; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+    th, td { border-bottom: 1px solid rgba(255,255,255,0.08); padding: 10px 8px; text-align: right; vertical-align: top; }
+    th { color: var(--color-accent); font-weight: 700; }
+    .btn-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .mini-btn { border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.03); color: var(--color-light); padding: 8px 10px; border-radius: 10px; cursor: pointer; font-size: 0.82rem; }
+    .mini-btn.danger { color: #ffb3b3; border-color: rgba(255,120,120,0.2); }
+    .mini-btn.success { color: #b8ffcf; border-color: rgba(120,255,150,0.2); }
+    .small { font-size: 0.82rem; color: var(--color-gray-400); }
+  </style>
+</head>
+<body>
+  <div class="promo-bar">⚡ لوحة إدارة سريعة: أضف، عدّل، أو احذف المنتج أو الباقة مباشرة من المتجر</div>
+
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="Logo.png" alt="بازار بلس" class="logo-img" />
+        <span class="logo-text">بازار بلس</span>
+      </div>
+      <a href="index.html" class="btn-primary" style="padding: 8px 16px; font-size: 0.85rem; width: auto;">العودة للمتجر</a>
+    </div>
+  </header>
+
+  <main class="container admin-shell">
+    <section class="panel">
+      <h2>إدارة المنتجات</h2>
+      <p class="muted">أضف منتجاً جديداً أو عدّل منتجاً موجوداً، ثم احفظ التغييرات في المتصفح.</p>
+      <form id="productForm" class="grid-2">
+        <div>
+          <label for="productId">معرّف المنتج (slug)</label>
+          <input id="productId" name="productId" placeholder="مثال: new-product" required />
+        </div>
+        <div>
+          <label for="productName">اسم المنتج</label>
+          <input id="productName" name="productName" placeholder="اسم المنتج" required />
+        </div>
+        <div>
+          <label for="productPrice">السعر</label>
+          <input id="productPrice" name="productPrice" type="number" min="0" required />
+        </div>
+        <div>
+          <label for="productWasPrice">السعر القديم</label>
+          <input id="productWasPrice" name="productWasPrice" type="number" min="0" />
+        </div>
+        <div>
+          <label for="productImage">مسار الصورة</label>
+          <input id="productImage" name="productImage" placeholder="new-product/Main.png" required />
+        </div>
+        <div>
+          <label for="productUpsell">منتج العرض الإضافي</label>
+          <input id="productUpsell" name="productUpsell" placeholder="wrist-support" />
+        </div>
+        <div>
+          <label for="productSizes">المقاسات (فاصلة)</label>
+          <input id="productSizes" name="productSizes" placeholder="S, M, L" />
+        </div>
+        <div>
+          <label for="productBadge">الشارة</label>
+          <input id="productBadge" name="productBadge" placeholder="🆕 متوفر الآن" />
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <label for="productDescription">الوصف</label>
+          <textarea id="productDescription" name="productDescription" placeholder="وصف مختصر للمنتج"></textarea>
+        </div>
+        <div>
+          <label for="productGallery">معرض الصور (فاصلة)</label>
+          <input id="productGallery" name="productGallery" placeholder="Main.png, image2.png" />
+        </div>
+        <div>
+          <label for="productHighlights">المميزات (فاصلة)</label>
+          <input id="productHighlights" name="productHighlights" placeholder="دعم قوي, خفيف الوزن" />
+        </div>
+        <div>
+          <label for="productInStock">الحالة</label>
+          <select id="productInStock" name="productInStock">
+            <option value="true">متوفر</option>
+            <option value="false">غير متوفر</option>
+          </select>
+        </div>
+        <div style="grid-column: 1 / -1;" class="btn-row">
+          <button type="submit" class="btn-primary" style="padding: 10px 14px; width: auto;">حفظ المنتج</button>
+          <button type="button" id="resetProductForm" class="mini-btn">إفراغ النموذج</button>
+        </div>
+      </form>
+      <div class="small" style="margin-top: 10px;">ملاحظة: التعديلات تحفظ مباشرة في المتصفح (localStorage) و تظهر فوراً على المتجر.</div>
+      <div id="productTable" style="margin-top: 14px;"></div>
+    </section>
+
+    <section class="panel">
+      <h2>إدارة الباقات</h2>
+      <p class="muted">أضف أو احذف باقة جاهزة، أو عدّل المنتجات التي تتضمنها.</p>
+      <form id="bundleForm" class="grid-2">
+        <div>
+          <label for="bundleId">معرّف الباقة</label>
+          <input id="bundleId" name="bundleId" placeholder="bundle-name" required />
+        </div>
+        <div>
+          <label for="bundleName">اسم الباقة</label>
+          <input id="bundleName" name="bundleName" placeholder="اسم الباقة" required />
+        </div>
+        <div>
+          <label for="bundlePrice">السعر</label>
+          <input id="bundlePrice" name="bundlePrice" type="number" min="0" required />
+        </div>
+        <div>
+          <label for="bundleWasPrice">السعر القديم</label>
+          <input id="bundleWasPrice" name="bundleWasPrice" type="number" min="0" />
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <label for="bundleProducts">معرّفات المنتجات (فاصلة)</label>
+          <input id="bundleProducts" name="bundleProducts" placeholder="ankle-sleeve, wrist-support" required />
+        </div>
+        <div style="grid-column: 1 / -1;">
+          <label for="bundleDescription">الوصف</label>
+          <textarea id="bundleDescription" name="bundleDescription" placeholder="وصف الباقة"></textarea>
+        </div>
+        <div style="grid-column: 1 / -1;" class="btn-row">
+          <button type="submit" class="btn-primary" style="padding: 10px 14px; width: auto;">حفظ الباقة</button>
+          <button type="button" id="resetBundleForm" class="mini-btn">إفراغ النموذج</button>
+        </div>
+      </form>
+      <div id="bundleTable" style="margin-top: 14px;"></div>
+      <div class="btn-row">
+        <button type="button" id="resetToDefaults" class="mini-btn danger">إعادة تعيين إلى القيم الافتراضية</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="assets/js/products.js"></script>
+  <script>
+    const productForm = document.getElementById('productForm');
+    const bundleForm = document.getElementById('bundleForm');
+    const productTable = document.getElementById('productTable');
+    const bundleTable = document.getElementById('bundleTable');
+
+    function getCatalog() {
+      return {
+        products: JSON.parse(localStorage.getItem('storeProducts') || JSON.stringify(window.DEFAULT_PRODUCTS || {})),
+        bundles: JSON.parse(localStorage.getItem('storeBundles') || JSON.stringify(window.DEFAULT_BUNDLES || {}))
+      };
+    }
+
+    function saveCatalog(products, bundles) {
+      localStorage.setItem('storeProducts', JSON.stringify(products));
+      localStorage.setItem('storeBundles', JSON.stringify(bundles));
+      location.reload();
+    }
+
+    function renderProducts() {
+      const { products } = getCatalog();
+      const rows = Object.entries(products).map(([id, item]) => `
+        <tr>
+          <td>${id}</td>
+          <td>${item.name}</td>
+          <td>${item.price} د.ل</td>
+          <td>${item.inStock ? 'متوفر' : 'غير متوفر'}</td>
+          <td>
+            <button class="mini-btn success" type="button" onclick="fillProduct('${id}')">تعديل</button>
+            <button class="mini-btn danger" type="button" onclick="deleteProduct('${id}')">حذف</button>
+          </td>
+        </tr>
+      `).join('');
+      productTable.innerHTML = `<table><thead><tr><th>المعرف</th><th>الاسم</th><th>السعر</th><th>الحالة</th><th>إجراءات</th></tr></thead><tbody>${rows}</tbody></table>`;
+    }
+
+    function renderBundles() {
+      const { bundles } = getCatalog();
+      const rows = Object.entries(bundles).map(([id, item]) => `
+        <tr>
+          <td>${id}</td>
+          <td>${item.name}</td>
+          <td>${item.price} د.ل</td>
+          <td>${(item.products || []).join(', ')}</td>
+          <td>
+            <button class="mini-btn success" type="button" onclick="fillBundle('${id}')">تعديل</button>
+            <button class="mini-btn danger" type="button" onclick="deleteBundle('${id}')">حذف</button>
+          </td>
+        </tr>
+      `).join('');
+      bundleTable.innerHTML = `<table><thead><tr><th>المعرف</th><th>الاسم</th><th>السعر</th><th>المنتجات</th><th>إجراءات</th></tr></thead><tbody>${rows}</tbody></table>`;
+    }
+
+    function fillProduct(id) {
+      const { products } = getCatalog();
+      const item = products[id];
+      document.getElementById('productId').value = id;
+      document.getElementById('productName').value = item.name || '';
+      document.getElementById('productPrice').value = item.price || '';
+      document.getElementById('productWasPrice').value = item.wasPrice || '';
+      document.getElementById('productImage').value = item.image || '';
+      document.getElementById('productUpsell').value = item.upsellProduct || '';
+      document.getElementById('productSizes').value = (item.sizes || []).join(', ');
+      document.getElementById('productBadge').value = item.badge || '';
+      document.getElementById('productDescription').value = item.description || '';
+      document.getElementById('productGallery').value = (item.gallery || []).join(', ');
+      document.getElementById('productHighlights').value = (item.highlights || []).join(', ');
+      document.getElementById('productInStock').value = String(Boolean(item.inStock));
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function fillBundle(id) {
+      const { bundles } = getCatalog();
+      const item = bundles[id];
+      document.getElementById('bundleId').value = id;
+      document.getElementById('bundleName').value = item.name || '';
+      document.getElementById('bundlePrice').value = item.price || '';
+      document.getElementById('bundleWasPrice').value = item.wasPrice || '';
+      document.getElementById('bundleProducts').value = (item.products || []).join(', ');
+      document.getElementById('bundleDescription').value = item.description || '';
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function deleteProduct(id) {
+      const { products, bundles } = getCatalog();
+      delete products[id];
+      saveCatalog(products, bundles);
+    }
+
+    function deleteBundle(id) {
+      const { products, bundles } = getCatalog();
+      delete bundles[id];
+      saveCatalog(products, bundles);
+    }
+
+    productForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const { products, bundles } = getCatalog();
+      const id = document.getElementById('productId').value.trim();
+      products[id] = {
+        name: document.getElementById('productName').value.trim(),
+        price: Number(document.getElementById('productPrice').value || 0),
+        wasPrice: Number(document.getElementById('productWasPrice').value || 0),
+        image: document.getElementById('productImage').value.trim(),
+        sizes: document.getElementById('productSizes').value.split(',').map(x => x.trim()).filter(Boolean),
+        inStock: document.getElementById('productInStock').value === 'true',
+        upsellProduct: document.getElementById('productUpsell').value.trim(),
+        badge: document.getElementById('productBadge').value.trim(),
+        description: document.getElementById('productDescription').value.trim(),
+        gallery: document.getElementById('productGallery').value.split(',').map(x => x.trim()).filter(Boolean),
+        highlights: document.getElementById('productHighlights').value.split(',').map(x => x.trim()).filter(Boolean)
+      };
+      saveCatalog(products, bundles);
+    });
+
+    bundleForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const { products, bundles } = getCatalog();
+      const id = document.getElementById('bundleId').value.trim();
+      bundles[id] = {
+        name: document.getElementById('bundleName').value.trim(),
+        products: document.getElementById('bundleProducts').value.split(',').map(x => x.trim()).filter(Boolean),
+        price: Number(document.getElementById('bundlePrice').value || 0),
+        wasPrice: Number(document.getElementById('bundleWasPrice').value || 0),
+        description: document.getElementById('bundleDescription').value.trim()
+      };
+      saveCatalog(products, bundles);
+    });
+
+    document.getElementById('resetProductForm').addEventListener('click', () => productForm.reset());
+    document.getElementById('resetBundleForm').addEventListener('click', () => bundleForm.reset());
+    document.getElementById('resetToDefaults').addEventListener('click', () => {
+      localStorage.removeItem('storeProducts');
+      localStorage.removeItem('storeBundles');
+      location.reload();
+    });
+
+    window.fillProduct = fillProduct;
+    window.fillBundle = fillBundle;
+    window.deleteProduct = deleteProduct;
+    window.deleteBundle = deleteBundle;
+
+    renderProducts();
+    renderBundles();
+  </script>
+</body>
+</html>

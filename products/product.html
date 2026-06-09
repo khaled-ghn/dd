@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتج | بازار بلس</title>
+  <meta name="description" content="صفحة منتج ديناميكية لعرض المنتجات والمقاسات والطلب بسهولة.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <div class="promo-bar">⚡ عرض خاص: توصيل مجاني لباب البيت والدفع بعد المعاينة والاستلام!</div>
+
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="../Logo.png" alt="بازار بلس" class="logo-img">
+        <span class="logo-text">بازار بلس</span>
+      </div>
+      <a id="buyNowTop" href="#" class="btn-primary" style="padding: 8px 16px; font-size: 0.8rem; width: auto;">اطلب الآن</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="product-main-layout">
+      <div class="product-gallery-col">
+        <div class="badge-tag"><span class="icon"></span><span id="productBadge">منتج</span></div>
+        <div class="hero-image-container"><img id="heroImage" src="" alt="" class="hero-image"></div>
+        <div class="price-box">
+          <span class="price-label">سعر العرض الخاص:</span>
+          <div class="price-values">
+            <span id="priceNow" class="price-actual">0 د.ل</span>
+            <span id="priceWas" class="price-was">0 د.ل</span>
+          </div>
+        </div>
+        <a id="buyNowMain" href="#" class="btn-primary" style="margin-bottom: 16px;">اطلب الآن والدفع عند الاستلام</a>
+
+        <div class="gallery-section" style="padding: 16px; margin-bottom: 0;">
+          <h3 class="gallery-title" style="font-size: 1rem; margin-bottom: 12px;">تفاصيل ومقاطع المنتج</h3>
+          <div class="slider-wrapper">
+            <div class="slider-container" id="imageSlider"></div>
+          </div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+
+      <div class="product-info-col">
+        <h1 id="productTitle" class="hero-title" style="text-align: right; font-size: 1.75rem; margin-bottom: 8px;">المنتج</h1>
+        <p id="productDescription" style="font-size: 1rem; color: var(--color-accent); font-weight: 700; margin-bottom: 16px;">وصف مختصر</p>
+
+        <div class="story-card">
+          <span class="story-badge">لماذا هذا المنتج؟</span>
+          <h3 class="story-title">نظرة سريعة على المنتج</h3>
+          <p id="productStory" class="story-text"></p>
+        </div>
+
+        <div class="highlights-grid" id="highlightsGrid" style="margin-top: 24px; margin-bottom: 24px;"></div>
+
+        <div class="story-card" style="margin-top: 20px;">
+          <span class="story-badge">المميزات</span>
+          <h3 class="story-title">ما الذي يميز هذا المنتج؟</h3>
+          <ul class="story-list">
+            <li class="story-list-item">متوفر بأحجام متعددة في نفس الصفحة.</li>
+            <li class="story-list-item">يمكنك إضافة أو حذف أي منتج بسهولة من ملف بيانات واحد.</li>
+            <li class="story-list-item">الصفحة جاهزة للاستخدام مع متاجر أخرى أيضاً.</li>
+          </ul>
+        </div>
+
+        <div class="reviews-section" style="padding-bottom: 0;">
+          <h2 class="reviews-title" style="text-align: right; font-size: 1.25rem;">تقييمات زبائننا</h2>
+          <div class="reviews-slider-wrapper" style="position: relative; overflow: hidden; width: 100%; margin-top: 16px;">
+            <div class="reviews-slider-container" id="reviewsSlider" style="display: flex; scroll-snap-type: x mandatory; scroll-behavior: smooth; overflow-x: auto; scrollbar-width: none;"></div>
+            <div class="reviews-dots" id="reviewsDots" style="display: flex; justify-content: center; gap: 8px; margin-top: 16px;"></div>
+          </div>
+        </div>
+
+        <div class="faq-section" style="margin-top: 24px; margin-bottom: 0;">
+          <h2 class="faq-title" style="text-align: right; font-size: 1.25rem;">الأسئلة الشائعة</h2>
+          <div class="accordion-item"><div class="accordion-header"><span>هل المنتج متوفر بأحجام مختلفة؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">نعم، يمكنك اختيار المقاس المناسب من صفحة الطلب.</div></div></div>
+          <div class="accordion-item"><div class="accordion-header"><span>هل التوصيل مجاني؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">نعم، نقدم توصيل مجاني في أغلب المدن مع الدفع عند الاستلام.</div></div></div>
+          <div class="accordion-item"><div class="accordion-header"><span>كم يستغرق التوصيل؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">عادة خلال 24–48 ساعة حسب المدينة.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <div class="sticky-footer" id="stickyFooter">
+    <div class="footer-price-col">
+      <span class="footer-label" id="footerLabel">سعر المنتج:</span>
+      <span id="footerPrice" class="footer-price">0 د.ل</span>
+    </div>
+    <a id="buyNowFooter" href="#" class="btn-primary">اطلب الآن</a>
+  </div>
+
+  <script src="../assets/js/products.js"></script>
+  <script src="../assets/js/reviews.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const slug = params.get('slug') || params.get('product') || 'ankle-sleeve';
+      const product = window.PRODUCTS[slug];
+      if (!product) {
+        window.location.href = '../index.html';
+        return;
+      }
+
+      document.title = `${product.name} | بازار بلس`;
+      document.querySelector('meta[name="description"]').setAttribute('content', product.description);
+
+      document.getElementById('productBadge').textContent = product.badge || 'منتج مميز';
+      document.getElementById('productTitle').textContent = product.name;
+      document.getElementById('productDescription').textContent = product.description;
+      document.getElementById('productStory').textContent = `${product.description} هذا المنتج مناسب لمن يبحث عن دعم متين وراحة أثناء الحركة اليومية أو التمرين.`;
+      document.getElementById('priceNow').textContent = `${product.price} د.ل`;
+      document.getElementById('priceWas').textContent = `${product.wasPrice} د.ل`;
+      document.getElementById('footerPrice').textContent = `${product.price} د.ل`;
+      document.getElementById('heroImage').src = `../${product.image}`;
+      document.getElementById('heroImage').alt = product.name;
+
+      const buyHref = `../checkout.html?product=${slug}`;
+      document.getElementById('buyNowTop').href = buyHref;
+      document.getElementById('buyNowMain').href = buyHref;
+      document.getElementById('buyNowFooter').href = buyHref;
+
+      const gallery = product.gallery || [product.image];
+      const slider = document.getElementById('imageSlider');
+      const dots = document.getElementById('sliderDots');
+      slider.innerHTML = '';
+      dots.innerHTML = '';
+      gallery.forEach((img, index) => {
+        const item = document.createElement('div');
+        item.className = 'slide-item';
+        item.innerHTML = `<img src="../${product.image.split('/')[0]}/${img}" alt="${product.name} ${index + 1}">`;
+        slider.appendChild(item);
+
+        const dot = document.createElement('span');
+        dot.className = 'dot' + (index === 0 ? ' active' : '');
+        dots.appendChild(dot);
+      });
+
+      const highlights = document.getElementById('highlightsGrid');
+      highlights.innerHTML = (product.highlights || []).map(item => `
+        <div class="highlight-card">
+          <div class="highlight-icon">✓</div>
+          <span class="highlight-title">${item}</span>
+        </div>
+      `).join('');
+
+      trackViewContent(slug, product.price);
+      startCountdownTimers();
+      setupFaqs();
+      setupCarousels();
+      setupStickyFooter();
+      renderDynamicReviews(slug);
+    })();
+  </script>
+</body>
+</html>

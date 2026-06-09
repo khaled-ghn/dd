@@ -1,0 +1,2988 @@
+{
+  "country": "Libya",
+  "currency": "LYD",
+  "last_updated": "2026-06-08",
+  "source": "Vanex Delivery Pricing",
+  "categories": {
+    "main city": {
+      "TIP": {
+        "region_code": "TIP",
+        "region_name_en": "Tripoli",
+        "region_name_ar": "طرابلس",
+        "cities": [
+          {
+            "city_name_ar": "طرابلس",
+            "city_id": null,
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "السياحية",
+            "city_id": "70",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "حي الأندلس",
+            "city_id": "71",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الظهرة",
+            "city_id": "73",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "زاوية الدهماني",
+            "city_id": "74",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "النوفليين",
+            "city_id": "75",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "بن عاشور",
+            "city_id": "76",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع الجرابة",
+            "city_id": "77",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع الزاوية",
+            "city_id": "78",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع الجمهورية",
+            "city_id": "79",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع النصر",
+            "city_id": "80",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "باب بن غشير",
+            "city_id": "81",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "قرقارش",
+            "city_id": "82",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "غوط الشعال",
+            "city_id": "83",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "السراج",
+            "city_id": "84",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الدريبي",
+            "city_id": "85",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "قرجي",
+            "city_id": "86",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "قدح",
+            "city_id": "87",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "أبوسليم",
+            "city_id": "88",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الرياضية",
+            "city_id": "89",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الفلاح",
+            "city_id": "90",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "غرغور",
+            "city_id": "91",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "حي الزهور",
+            "city_id": "92",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "طريق المطار",
+            "city_id": "93",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الكيزة",
+            "city_id": "94",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "صلاح الدين",
+            "city_id": "95",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "خلة الفرجان",
+            "city_id": "96",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "طريق الشوك",
+            "city_id": "97",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الفرناج",
+            "city_id": "98",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الحي الجامعي",
+            "city_id": "99",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "سيدي المصري",
+            "city_id": "100",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "راس حسن",
+            "city_id": "101",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "زناتة",
+            "city_id": "102",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "جامع الصقع",
+            "city_id": "103",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهاني",
+            "city_id": "104",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "عرادة",
+            "city_id": "105",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الحشان",
+            "city_id": "106",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "سوق الجمعة",
+            "city_id": "107",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "كشلاف",
+            "city_id": "108",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الغرارات",
+            "city_id": "109",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "بوستة",
+            "city_id": "110",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "طريق الشط",
+            "city_id": "111",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "معيتيقة",
+            "city_id": "112",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "11 يونيو",
+            "city_id": "113",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "السبعة",
+            "city_id": "114",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "طريق المشتل",
+            "city_id": "115",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "حي دمشق",
+            "city_id": "116",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "ولي العهد",
+            "city_id": "117",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "السدرة",
+            "city_id": "118",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "عين زارة",
+            "city_id": "119",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "طريق السور",
+            "city_id": "147",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "بوابة الجبس",
+            "city_id": "148",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "غابة النصر",
+            "city_id": "149",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع الصريم",
+            "city_id": "159",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "فشلوم",
+            "city_id": "698",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "المنصورة",
+            "city_id": "700",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "عمر المختار",
+            "city_id": "702",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهضبة المشروع",
+            "city_id": "1219",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع الظل",
+            "city_id": "1781",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "حي الأكواخ",
+            "city_id": "1782",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع البلدية",
+            "city_id": "1783",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهضبة الخضراء",
+            "city_id": "1784",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهضبة البدري",
+            "city_id": "1785",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهضبة طول",
+            "city_id": "1786",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "الهضبة الشرقية",
+            "city_id": "1787",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "خزانات النفظ",
+            "city_id": "1794",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "طريق المطبات",
+            "city_id": "1795",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع الاسلاك",
+            "city_id": "1796",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "حرف الـT",
+            "city_id": "1797",
+            "price_lyd": 10.0
+          },
+          {
+            "city_name_ar": "حي اسطنبول",
+            "city_id": "1798",
+            "price_lyd": 10.0
+          },
+          {
+            "city_name_ar": "شارع ميزران",
+            "city_id": "1810",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع المقريف",
+            "city_id": "1811",
+            "price_lyd": 15.0
+          },
+          {
+            "city_name_ar": "شارع اول سبتمبر",
+            "city_id": "1812",
+            "price_lyd": 15.0
+          }
+        ]
+      },
+      "BEN": {
+        "region_code": "BEN",
+        "region_name_en": "Benghazi",
+        "region_name_ar": "بنغازي",
+        "cities": [
+          {
+            "city_name_ar": "بنغازي",
+            "city_id": null,
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "راس عبيدة",
+            "city_id": "122",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بوزغيبة",
+            "city_id": "123",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "حي السلام",
+            "city_id": "124",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شبنة",
+            "city_id": "125",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "طريق النهر",
+            "city_id": "126",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الماجوري",
+            "city_id": "127",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "سيدي حسين",
+            "city_id": "128",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "البركة",
+            "city_id": "129",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الحدائق",
+            "city_id": "130",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "أرض لملوم",
+            "city_id": "131",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "السلماني",
+            "city_id": "132",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الوحيشي",
+            "city_id": "133",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "سيدي يونس",
+            "city_id": "134",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "ارض الحراسة",
+            "city_id": "135",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "طابلينو",
+            "city_id": "136",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الرحبة",
+            "city_id": "137",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بلعون",
+            "city_id": "138",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بوهديمة",
+            "city_id": "139",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الليثي",
+            "city_id": "140",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الفويهات",
+            "city_id": "141",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "سوق الفحم",
+            "city_id": "142",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بوعطني",
+            "city_id": "143",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "المساكن",
+            "city_id": "144",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "قاريونس",
+            "city_id": "145",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "قمينس",
+            "city_id": "146",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الكويفية",
+            "city_id": "150",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بنينا",
+            "city_id": "152",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "قنفوذة",
+            "city_id": "153",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "سيدي خليفة",
+            "city_id": "154",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الرجمة",
+            "city_id": "155",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الهواري",
+            "city_id": "156",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الفعكات",
+            "city_id": "157",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بوهادي",
+            "city_id": "158",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الكيش",
+            "city_id": "160",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "دقادوستا",
+            "city_id": "161",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "القوارشة",
+            "city_id": "317",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شارع فينيسيا",
+            "city_id": "318",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "ثاكنس",
+            "city_id": "335",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "طلميثة",
+            "city_id": "338",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "توكرة",
+            "city_id": "339",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "قمينس",
+            "city_id": "342",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الرجمة",
+            "city_id": "343",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الابيار",
+            "city_id": "344",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "سلوق",
+            "city_id": "345",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "جردينة",
+            "city_id": "673",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "المقزحة",
+            "city_id": "675",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "بو مريم",
+            "city_id": "677",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "سيدي فرج",
+            "city_id": "1132",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بو دزيرة",
+            "city_id": "1135",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الصابري",
+            "city_id": "1143",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "القوارشة",
+            "city_id": "1148",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الرويسات - بنغازي",
+            "city_id": "1156",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "حي الدولار",
+            "city_id": "1163",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "حي الفاتح",
+            "city_id": "1164",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شارع دبي",
+            "city_id": "1171",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "السيدة عائشة",
+            "city_id": "1177",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "بوصنيب",
+            "city_id": "1178",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "حي الزيتونه",
+            "city_id": "1799",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "حي قطر",
+            "city_id": "1800",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "عمارات 602",
+            "city_id": "1801",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "طريق المطار",
+            "city_id": "1802",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شارع الفحم",
+            "city_id": "1803",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شارع سوريا",
+            "city_id": "1804",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "شارع لبنان",
+            "city_id": "1805",
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "SBH": {
+        "region_code": "SBH",
+        "region_name_en": "Sabha",
+        "region_name_ar": "سبها",
+        "cities": [
+          {
+            "city_name_ar": "سبها",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "MSR": {
+        "region_code": "MSR",
+        "region_name_en": "Misrata",
+        "region_name_ar": "مصراتة",
+        "cities": [
+          {
+            "city_name_ar": "مصراتة",
+            "city_id": null,
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع طرابلس",
+            "city_id": "359",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع بنغازي",
+            "city_id": "360",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع الهلال",
+            "city_id": "361",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الجامع العالي",
+            "city_id": "362",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع سناء محيدلي",
+            "city_id": "363",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع الاذاعة",
+            "city_id": "369",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "المقاوبة",
+            "city_id": "370",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع مالطا",
+            "city_id": "371",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "جزيرة النهر",
+            "city_id": "372",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع المطبات",
+            "city_id": "373",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الشواهدة",
+            "city_id": "374",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الجزيرة",
+            "city_id": "375",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "إقزير",
+            "city_id": "376",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "كرزاز",
+            "city_id": "377",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الغيران",
+            "city_id": "378",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق المطار",
+            "city_id": "379",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طمينة",
+            "city_id": "380",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الكراريم",
+            "city_id": "381",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "زاوية المحجوب",
+            "city_id": "382",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "قصر حمد",
+            "city_id": "383",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الثقيل",
+            "city_id": "384",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الجهانات",
+            "city_id": "385",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الزوابى",
+            "city_id": "386",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الشراكسة",
+            "city_id": "387",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الكراوده",
+            "city_id": "388",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "القدارية",
+            "city_id": "389",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الحيارشة",
+            "city_id": "390",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "السواوة",
+            "city_id": "391",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "بوروية",
+            "city_id": "392",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "السِكت",
+            "city_id": "393",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الرعيضات",
+            "city_id": "394",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "السكيرات",
+            "city_id": "395",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الهباره",
+            "city_id": "396",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الملايطة",
+            "city_id": "397",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الزروق",
+            "city_id": "398",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الرملة",
+            "city_id": "399",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "قرارة",
+            "city_id": "400",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "يدر",
+            "city_id": "401",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "راس علي",
+            "city_id": "402",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "المنقوش",
+            "city_id": "403",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "عباد",
+            "city_id": "404",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الدافنية",
+            "city_id": "405",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "زمورة",
+            "city_id": "406",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع بازينة",
+            "city_id": "407",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع سعدون",
+            "city_id": "408",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "المقاصبة",
+            "city_id": "409",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الصوالح",
+            "city_id": "410",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "راس السايح",
+            "city_id": "411",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "راس علي",
+            "city_id": "412",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "راس فريدغ",
+            "city_id": "413",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "راس التوتة",
+            "city_id": "414",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "شارع الدم",
+            "city_id": "415",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الخروبة",
+            "city_id": "416",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق رقم 8",
+            "city_id": "417",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "دائري إقزير",
+            "city_id": "418",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق البحر",
+            "city_id": "419",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الرويسات - مصراتة",
+            "city_id": "420",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "زريق",
+            "city_id": "421",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "السكت",
+            "city_id": "741",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "المغدر",
+            "city_id": "747",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "السواطي",
+            "city_id": "753",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "سور سعود",
+            "city_id": "756",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "النباك",
+            "city_id": "772",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "أولاد بعيو",
+            "city_id": "774",
+            "price_lyd": 25.0
+          }
+        ]
+      }
+    },
+    "city": {
+      "ZWY": {
+        "region_code": "ZWY",
+        "region_name_en": "Zawiya",
+        "region_name_ar": "الزاوية",
+        "cities": [
+          {
+            "city_name_ar": "الزاوية",
+            "city_id": null,
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "JUZ": {
+        "region_code": "JUZ",
+        "region_name_en": "Janzour",
+        "region_name_ar": "جنزور",
+        "cities": [
+          {
+            "city_name_ar": "جنزور",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "SUR": {
+        "region_code": "SUR",
+        "region_name_en": "Surman",
+        "region_name_ar": "صرمان",
+        "cities": [
+          {
+            "city_name_ar": "صرمان",
+            "city_id": null,
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "SUB": {
+        "region_code": "SUB",
+        "region_name_en": "Sabratha",
+        "region_name_ar": "صبراتة",
+        "cities": [
+          {
+            "city_name_ar": "صبراتة",
+            "city_id": null,
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "EJT": {
+        "region_code": "EJT",
+        "region_name_en": "Al-Ajailat",
+        "region_name_ar": "العجيلات",
+        "cities": [
+          {
+            "city_name_ar": "العجيلات",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "WAX": {
+        "region_code": "WAX",
+        "region_name_en": "Zuwarah",
+        "region_name_ar": "زوارة",
+        "cities": [
+          {
+            "city_name_ar": "زوارة",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "EJM": {
+        "region_code": "EJM",
+        "region_name_en": "Al-Jamil",
+        "region_name_ar": "الجميل",
+        "cities": [
+          {
+            "city_name_ar": "الجميل",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "RGD": {
+        "region_code": "RGD",
+        "region_name_en": "Raqdalin",
+        "region_name_ar": "رقدالين",
+        "cities": [
+          {
+            "city_name_ar": "رقدالين",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "ZLT": {
+        "region_code": "ZLT",
+        "region_name_en": "Zaltan",
+        "region_name_ar": "زلطن",
+        "cities": [
+          {
+            "city_name_ar": "زلطن",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "TJR": {
+        "region_code": "TJR",
+        "region_name_en": "Tajura",
+        "region_name_ar": "تاجوراء",
+        "cities": [
+          {
+            "city_name_ar": "تاجوراء",
+            "city_id": null,
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "البيفي",
+            "city_id": "1788",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "مصنع النجمة",
+            "city_id": "1789",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "القلب",
+            "city_id": "1790",
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "GRB": {
+        "region_code": "GRB",
+        "region_name_en": "Garaboulli",
+        "region_name_ar": "القره بوللي",
+        "cities": [
+          {
+            "city_name_ar": "القره بوللي",
+            "city_id": null,
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "غوط الرمان",
+            "city_id": "1791",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "القويعة",
+            "city_id": "1793",
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "GSR": {
+        "region_code": "GSR",
+        "region_name_en": "Gaser Al-Akhiar",
+        "region_name_ar": "قصر الاخيار",
+        "cities": [
+          {
+            "city_name_ar": "قصر الاخيار",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "KHS": {
+        "region_code": "KHS",
+        "region_name_en": "Al-Khums",
+        "region_name_ar": "الخمس",
+        "cities": [
+          {
+            "city_name_ar": "الخمس",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "ZLN": {
+        "region_code": "ZLN",
+        "region_name_en": "Zliten",
+        "region_name_ar": "زليتن",
+        "cities": [
+          {
+            "city_name_ar": "زليتن",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "BJD": {
+        "region_code": "BJD",
+        "region_name_en": "Bin Jawad",
+        "region_name_ar": "بن جواد",
+        "cities": [
+          {
+            "city_name_ar": "بن جواد",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "BWLD": {
+        "region_code": "BWLD",
+        "region_name_en": "Bani Walid",
+        "region_name_ar": "بن وليد",
+        "cities": [
+          {
+            "city_name_ar": "بن وليد",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "TRH": {
+        "region_code": "TRH",
+        "region_name_en": "Tarhuna",
+        "region_name_ar": "ترهونة",
+        "cities": [
+          {
+            "city_name_ar": "ترهونة",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "SRT": {
+        "region_code": "SRT",
+        "region_name_en": "Sirte",
+        "region_name_ar": "سرت",
+        "cities": [
+          {
+            "city_name_ar": "سرت",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "RLF": {
+        "region_code": "RLF",
+        "region_name_en": "Ras Lanuf",
+        "region_name_ar": "راس لانوف",
+        "cities": [
+          {
+            "city_name_ar": "راس لانوف",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "BRI": {
+        "region_code": "BRI",
+        "region_name_en": "Brega",
+        "region_name_ar": "البريقة",
+        "cities": [
+          {
+            "city_name_ar": "البريقة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "EJD": {
+        "region_code": "EJD",
+        "region_name_en": "Ajdabiya",
+        "region_name_ar": "اجدابيا",
+        "cities": [
+          {
+            "city_name_ar": "إجدابيا",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "MRJ": {
+        "region_code": "MRJ",
+        "region_name_en": "Al-Marj",
+        "region_name_ar": "المرج",
+        "cities": [
+          {
+            "city_name_ar": "المرج",
+            "city_id": null,
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "دريانة",
+            "city_id": "615",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "المدني",
+            "city_id": "617",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "توكرة",
+            "city_id": "619",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "برسس",
+            "city_id": "621",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "سي بوزيد",
+            "city_id": "623",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "طلميثة",
+            "city_id": "625",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "تاكنس",
+            "city_id": "627",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "جردس",
+            "city_id": "629",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "البنية",
+            "city_id": "631",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "المليطانية",
+            "city_id": "633",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "مدور الزيتون",
+            "city_id": "637",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "البياضة",
+            "city_id": "639",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "بطة",
+            "city_id": "641",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "أبو ترابة",
+            "city_id": "643",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "المرج الوسط",
+            "city_id": "782",
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "BLAQ": {
+        "region_code": "BLAQ",
+        "region_name_en": "Al-Bayda",
+        "region_name_ar": "البيضاء",
+        "cities": [
+          {
+            "city_name_ar": "البيضاء",
+            "city_id": null,
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "مسة",
+            "city_id": "334",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الغريقة",
+            "city_id": "336",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "مراوة",
+            "city_id": "635",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "مسة",
+            "city_id": "707",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الغريقة",
+            "city_id": "710",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "البيضاء الوسط",
+            "city_id": "713",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "سلتونة",
+            "city_id": "716",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "صفصاف",
+            "city_id": "720",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الحمامة",
+            "city_id": "723",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الحنية",
+            "city_id": "726",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الوسيطة",
+            "city_id": "729",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "الفايدية",
+            "city_id": "735",
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "SLAQ": {
+        "region_code": "SLAQ",
+        "region_name_en": "Shahhat",
+        "region_name_ar": "شحات",
+        "cities": [
+          {
+            "city_name_ar": "شحات",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "TOB": {
+        "region_code": "TOB",
+        "region_name_en": "Tobruk",
+        "region_name_ar": "طبرق",
+        "cities": [
+          {
+            "city_name_ar": "طبرق",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "GRY": {
+        "region_code": "GRY",
+        "region_name_en": "Gharyan",
+        "region_name_ar": "غريان",
+        "cities": [
+          {
+            "city_name_ar": "غريان",
+            "city_id": null,
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "تغسات",
+            "city_id": "1807",
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "ESB": {
+        "region_code": "ESB",
+        "region_name_en": "Al-Asabea",
+        "region_name_ar": "الاصابعة",
+        "cities": [
+          {
+            "city_name_ar": "الاصابعة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "ZIS": {
+        "region_code": "ZIS",
+        "region_name_en": "Zintan",
+        "region_name_ar": "الزنتان",
+        "cities": [
+          {
+            "city_name_ar": "الزنتان",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "JAD": {
+        "region_code": "JAD",
+        "region_name_en": "Jadu",
+        "region_name_ar": "جادو",
+        "cities": [
+          {
+            "city_name_ar": "جادو",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "NAL": {
+        "region_code": "NAL",
+        "region_name_en": "Nalut",
+        "region_name_ar": "نالوت",
+        "cities": [
+          {
+            "city_name_ar": "نالوت",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "BRK": {
+        "region_code": "BRK",
+        "region_name_en": "Brak Al-Shati",
+        "region_name_ar": "براك الشاطئ",
+        "cities": [
+          {
+            "city_name_ar": "براك الشاطئ",
+            "city_id": null,
+            "price_lyd": 40.0
+          }
+        ]
+      },
+      "HUQ": {
+        "region_code": "HUQ",
+        "region_name_en": "Hun",
+        "region_name_ar": "هون",
+        "cities": [
+          {
+            "city_name_ar": "هون",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "SWN": {
+        "region_code": "SWN",
+        "region_name_en": "Al-Sawani",
+        "region_name_ar": "السواني",
+        "cities": [
+          {
+            "city_name_ar": "السواني",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "DRN": {
+        "region_code": "DRN",
+        "region_name_en": "Derna",
+        "region_name_ar": "درنة",
+        "cities": [
+          {
+            "city_name_ar": "درنة",
+            "city_id": null,
+            "price_lyd": 40.0
+          },
+          {
+            "city_name_ar": "الفتائح",
+            "city_id": "647",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "كرسة",
+            "city_id": "649",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "وادي الناقة",
+            "city_id": "651",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "مرتوبة",
+            "city_id": "653",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "سي خالد",
+            "city_id": "656",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "حي القاعدة الجوية",
+            "city_id": "657",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "سيدي عون",
+            "city_id": "659",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "ام الرزم",
+            "city_id": "661",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "لاثرون",
+            "city_id": "663",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "خليج البمبة",
+            "city_id": "665",
+            "price_lyd": 35.0
+          },
+          {
+            "city_name_ar": "التميمي",
+            "city_id": "667",
+            "price_lyd": 45.0
+          },
+          {
+            "city_name_ar": "العزيات",
+            "city_id": "669",
+            "price_lyd": 45.0
+          },
+          {
+            "city_name_ar": "رأس التين",
+            "city_id": "671",
+            "price_lyd": 45.0
+          },
+          {
+            "city_name_ar": "درنة الوسط",
+            "city_id": "1239",
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "GTIP": {
+        "region_code": "GTIP",
+        "region_name_en": "Qasr Bin Ghashir",
+        "region_name_ar": "قصربن غشير",
+        "cities": [
+          {
+            "city_name_ar": "قصربن غشير",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "MTR": {
+        "region_code": "MTR",
+        "region_name_en": "Matrad",
+        "region_name_ar": "مطرد",
+        "cities": [
+          {
+            "city_name_ar": "مطرد",
+            "city_id": null,
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "ALAQ": {
+        "region_code": "ALAQ",
+        "region_name_en": "Al-Abyar",
+        "region_name_ar": "الابيار",
+        "cities": [
+          {
+            "city_name_ar": "الابيار",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "WTIP": {
+        "region_code": "WTIP",
+        "region_name_en": "Wadi Al-Rabea",
+        "region_name_ar": "وادي الربيع",
+        "cities": [
+          {
+            "city_name_ar": "وادي الربيع",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "GLA": {
+        "region_code": "GLA",
+        "region_name_en": "Al-Qala",
+        "region_name_ar": "القلعة",
+        "cities": [
+          {
+            "city_name_ar": "القلعة",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "TYG": {
+        "region_code": "TYG",
+        "region_name_en": "Tiji",
+        "region_name_ar": "تيجي",
+        "cities": [
+          {
+            "city_name_ar": "تيجي",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "AWB": {
+        "region_code": "AWB",
+        "region_name_en": "Awbari",
+        "region_name_ar": "أوباري",
+        "cities": [
+          {
+            "city_name_ar": "أوباري",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "MRZ": {
+        "region_code": "MRZ",
+        "region_name_en": "Murzuq",
+        "region_name_ar": "مرزق",
+        "cities": [
+          {
+            "city_name_ar": "مرزق",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "YFR": {
+        "region_code": "YFR",
+        "region_name_en": "Yefren",
+        "region_name_ar": "يفرن",
+        "cities": [
+          {
+            "city_name_ar": "يفرن",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "GAT": {
+        "region_code": "GAT",
+        "region_name_en": "Ghadames",
+        "region_name_ar": "غات",
+        "cities": [
+          {
+            "city_name_ar": "غات",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "RGB": {
+        "region_code": "RGB",
+        "region_name_en": "Al-Rajban",
+        "region_name_ar": "الرجبان",
+        "cities": [
+          {
+            "city_name_ar": "الرجبان",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "SPI": {
+        "region_code": "SPI",
+        "region_name_en": "Al-Sabea",
+        "region_name_ar": "السبيعة",
+        "cities": [
+          {
+            "city_name_ar": "السبيعة",
+            "city_id": null,
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "سوق الخميس مسيحل",
+            "city_id": "1809",
+            "price_lyd": 25.0
+          }
+        ]
+      },
+      "JFR": {
+        "region_code": "JFR",
+        "region_name_en": "Al-Jufra",
+        "region_name_ar": "الجفرة",
+        "cities": [
+          {
+            "city_name_ar": "الجفرة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "GOB": {
+        "region_code": "GOB",
+        "region_name_en": "Al-Qubba",
+        "region_name_ar": "القبة",
+        "cities": [
+          {
+            "city_name_ar": "القبة",
+            "city_id": null,
+            "price_lyd": 40.0
+          }
+        ]
+      },
+      "WZH": {
+        "region_code": "WZH",
+        "region_name_en": "Warshafana Al-Zahra",
+        "region_name_ar": "ورشفانة الزهراء",
+        "cities": [
+          {
+            "city_name_ar": "ورشفانة الزهراء",
+            "city_id": null,
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الماية",
+            "city_id": "1792",
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "WSD": {
+        "region_code": "WSD",
+        "region_name_en": "Warshafana Al-Saadiya",
+        "region_name_ar": "ورشفانة الساعدية",
+        "cities": [
+          {
+            "city_name_ar": "ورشفانة الساعدية",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "WAZ": {
+        "region_code": "WAZ",
+        "region_name_en": "Warshafana Al-Aziziya",
+        "region_name_ar": "ورشفانة العزيزية",
+        "cities": [
+          {
+            "city_name_ar": "ورشفانة العزيزية",
+            "city_id": null,
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "MSL": {
+        "region_code": "MSL",
+        "region_name_en": "Muslata",
+        "region_name_ar": "مسلاتة",
+        "cities": [
+          {
+            "city_name_ar": "مسلاتة",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "TRS": {
+        "region_code": "TRS",
+        "region_name_en": "Traghan",
+        "region_name_ar": "تراغن",
+        "cities": [
+          {
+            "city_name_ar": "تراغن",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "OMS": {
+        "region_code": "OMS",
+        "region_name_en": "Umm Al-Aranib",
+        "region_name_ar": "ام الارانب",
+        "cities": [
+          {
+            "city_name_ar": "أم الارانب",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "SMNO": {
+        "region_code": "SMNO",
+        "region_name_en": "Samnu",
+        "region_name_ar": "سمنو",
+        "cities": [
+          {
+            "city_name_ar": "سمنو",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "SULAQ": {
+        "region_code": "SULAQ",
+        "region_name_en": "Susa",
+        "region_name_ar": "سوسة",
+        "cities": [
+          {
+            "city_name_ar": "سوسة",
+            "city_id": null,
+            "price_lyd": 40.0
+          }
+        ]
+      },
+      "LAQ": {
+        "region_code": "LAQ",
+        "region_name_en": "Al-Abarq",
+        "region_name_ar": "الأبرق",
+        "cities": [
+          {
+            "city_name_ar": "الأبرق",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "JLW": {
+        "region_code": "JLW",
+        "region_name_en": "Jalu",
+        "region_name_ar": "جالو",
+        "cities": [
+          {
+            "city_name_ar": "جالو",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "OJL": {
+        "region_code": "OJL",
+        "region_name_en": "Awjila",
+        "region_name_ar": "أوجلة",
+        "cities": [
+          {
+            "city_name_ar": "أوجلة",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "NFR": {
+        "region_code": "NFR",
+        "region_name_en": "Jakhra",
+        "region_name_ar": "إجخرة",
+        "cities": [
+          {
+            "city_name_ar": "إجخرة",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "TZR": {
+        "region_code": "TZR",
+        "region_name_en": "Tazirbu",
+        "region_name_ar": "تازربو",
+        "cities": [
+          {
+            "city_name_ar": "تازربو",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "JUSH": {
+        "region_code": "JUSH",
+        "region_name_en": "Al-Jawsh",
+        "region_name_ar": "الجوش",
+        "cities": [
+          {
+            "city_name_ar": "الجوش",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "BDR": {
+        "region_code": "BDR",
+        "region_name_en": "Badr",
+        "region_name_ar": "بدر",
+        "cities": [
+          {
+            "city_name_ar": "بدر",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "RBT": {
+        "region_code": "RBT",
+        "region_name_en": "Al-Rabta",
+        "region_name_ar": "الرابطة",
+        "cities": [
+          {
+            "city_name_ar": "الرابطة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "RYN": {
+        "region_code": "RYN",
+        "region_name_en": "Al-Rayaina",
+        "region_name_ar": "الرياينة",
+        "cities": [
+          {
+            "city_name_ar": "الرياينة",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "AWN": {
+        "region_code": "AWN",
+        "region_name_en": "Al-Awiniya",
+        "region_name_ar": "العوينية",
+        "cities": [
+          {
+            "city_name_ar": "العوينية",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "RHP": {
+        "region_code": "RHP",
+        "region_name_en": "Al-Rahibat",
+        "region_name_ar": "الرحيبات",
+        "cities": [
+          {
+            "city_name_ar": "الرحيبات",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "WMH": {
+        "region_code": "WMH",
+        "region_name_en": "Awlad Mahmoud",
+        "region_name_ar": "أولاد محمود",
+        "cities": [
+          {
+            "city_name_ar": "أولاد محمود",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "HRB": {
+        "region_code": "HRB",
+        "region_name_en": "Al-Haraba",
+        "region_name_ar": "الحرابة",
+        "cities": [
+          {
+            "city_name_ar": "الحرابة",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "KBW": {
+        "region_code": "KBW",
+        "region_name_en": "Kabao",
+        "region_name_ar": "كاباو",
+        "cities": [
+          {
+            "city_name_ar": "كاباو",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "TMZ": {
+        "region_code": "TMZ",
+        "region_name_en": "Tamzin",
+        "region_name_ar": "طمزين",
+        "cities": [
+          {
+            "city_name_ar": "طمزين",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "HWD": {
+        "region_code": "HWD",
+        "region_name_en": "Al-Hawamid",
+        "region_name_ar": "الحوامد",
+        "cities": [
+          {
+            "city_name_ar": "الحوامد",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "SHAK": {
+        "region_code": "SHAK",
+        "region_name_en": "Shakshuk",
+        "region_name_ar": "شكشوك",
+        "cities": [
+          {
+            "city_name_ar": "شكشوك",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "TKWT": {
+        "region_code": "TKWT",
+        "region_name_en": "Takwit",
+        "region_name_ar": "تكويت",
+        "cities": [
+          {
+            "city_name_ar": "تكويت",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "WZN": {
+        "region_code": "WZN",
+        "region_name_en": "Wazin",
+        "region_name_ar": "وازن",
+        "cities": [
+          {
+            "city_name_ar": "وازن",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "KKL": {
+        "region_code": "KKL",
+        "region_name_en": "Kakla",
+        "region_name_ar": "ككلة",
+        "cities": [
+          {
+            "city_name_ar": "ككلة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "RSH": {
+        "region_code": "RSH",
+        "region_name_en": "Ras Hilal",
+        "region_name_ar": "رأس هلال",
+        "cities": [
+          {
+            "city_name_ar": "رأس هلال",
+            "city_id": null,
+            "price_lyd": 40.0
+          }
+        ]
+      },
+      "SKN": {
+        "region_code": "SKN",
+        "region_name_en": "Sukna",
+        "region_name_ar": "سوكنة",
+        "cities": [
+          {
+            "city_name_ar": "سوكنة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "WDN": {
+        "region_code": "WDN",
+        "region_name_en": "Waddan",
+        "region_name_ar": "ودان",
+        "cities": [
+          {
+            "city_name_ar": "ودان",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "ZLH": {
+        "region_code": "ZLH",
+        "region_name_en": "Zallah",
+        "region_name_ar": "زلة",
+        "cities": [
+          {
+            "city_name_ar": "زلة",
+            "city_id": null,
+            "price_lyd": 45.0
+          }
+        ]
+      },
+      "GTR": {
+        "region_code": "GTR",
+        "region_name_en": "Al-Qatrun",
+        "region_name_ar": "القطرون",
+        "cities": [
+          {
+            "city_name_ar": "القطرون",
+            "city_id": null,
+            "price_lyd": 55.0
+          }
+        ]
+      },
+      "ASF": {
+        "region_code": "ASF",
+        "region_name_en": "Al-Shawiref",
+        "region_name_ar": "الشويرف",
+        "cities": [
+          {
+            "city_name_ar": "الشويرف",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "AQN": {
+        "region_code": "AQN",
+        "region_name_en": "Abu Qurayn",
+        "region_name_ar": "أبو قرين",
+        "cities": [
+          {
+            "city_name_ar": "أبو قرين",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "IMS": {
+        "region_code": "IMS",
+        "region_name_en": "Umsaad",
+        "region_name_ar": "امساعد",
+        "cities": [
+          {
+            "city_name_ar": "امساعد",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "BRD": {
+        "region_code": "BRD",
+        "region_name_en": "Al-Bardi",
+        "region_name_ar": "البردي",
+        "cities": [
+          {
+            "city_name_ar": "البردي",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "ASHB": {
+        "region_code": "ASHB",
+        "region_name_en": "Bir Al-Ashhab",
+        "region_name_ar": "بئر الأشهب",
+        "cities": [
+          {
+            "city_name_ar": "بئر الأشهب",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "KMB": {
+        "region_code": "KMB",
+        "region_name_en": "Kambut",
+        "region_name_ar": "كمبوت",
+        "cities": [
+          {
+            "city_name_ar": "كمبوت",
+            "city_id": null,
+            "price_lyd": 50.0
+          }
+        ]
+      },
+      "MZD": {
+        "region_code": "MZD",
+        "region_name_en": "Mizdah",
+        "region_name_ar": "مزدة",
+        "cities": [
+          {
+            "city_name_ar": "مزدة",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "ABKM": {
+        "region_code": "ABKM",
+        "region_name_en": "Abu Kamash",
+        "region_name_ar": "أبو كماش",
+        "cities": [
+          {
+            "city_name_ar": "أبو كماش",
+            "city_id": null,
+            "price_lyd": 40.0
+          }
+        ]
+      },
+      "GMNS": {
+        "region_code": "GMNS",
+        "region_name_en": "Qaminis",
+        "region_name_ar": "قمينس",
+        "cities": [
+          {
+            "city_name_ar": "قمينس",
+            "city_id": null,
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "الطلحية",
+            "city_id": "1247",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "تيكا",
+            "city_id": "1252",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "جروثة",
+            "city_id": "1255",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "المقرون",
+            "city_id": "1260",
+            "price_lyd": 30.0
+          },
+          {
+            "city_name_ar": "النواقية",
+            "city_id": "1263",
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "SLOG": {
+        "region_code": "SLOG",
+        "region_name_en": "Slouq",
+        "region_name_ar": "سلوق",
+        "cities": [
+          {
+            "city_name_ar": "سلوق",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "BRGN": {
+        "region_code": "BRGN",
+        "region_name_en": "Bir Ghanam",
+        "region_name_ar": "بئر غنم",
+        "cities": [
+          {
+            "city_name_ar": "بئر غنم",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "BRMR": {
+        "region_code": "BRMR",
+        "region_name_en": "Bir Maamar",
+        "region_name_ar": "بئر معمر",
+        "cities": [
+          {
+            "city_name_ar": "بئر معمر",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "BRHS": {
+        "region_code": "BRHS",
+        "region_name_en": "Bir Hweisa",
+        "region_name_ar": "بئر هويسة",
+        "cities": [
+          {
+            "city_name_ar": "بئر هويسة",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      }
+    },
+    "branch delivery": {
+      "VNX": {
+        "region_code": "VNX",
+        "region_name_en": "Vanex Branch Delivery",
+        "region_name_ar": "تسليم بفرع",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع حي الاندلس",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      },
+      "JVNX": {
+        "region_code": "JVNX",
+        "region_name_en": "Vanex Branch - Al-Jaraba",
+        "region_name_ar": "تسليم بفرع الجرابة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع الجرابة",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      },
+      "BVNX": {
+        "region_code": "BVNX",
+        "region_name_en": "Vanex Branch - Benghazi",
+        "region_name_ar": "تسليم بفرع بنغازي",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع بنغازي",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "SVNX": {
+        "region_code": "SVNX",
+        "region_name_en": "Vanex Branch - Al-Sarraj",
+        "region_name_ar": "تسليم بفرع السراج",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع السراج",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      },
+      "MVNX": {
+        "region_code": "MVNX",
+        "region_name_en": "Vanex Branch - Misrata",
+        "region_name_ar": "تسليم بفرع مصراتة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع مصراتة",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "AVNX": {
+        "region_code": "AVNX",
+        "region_name_en": "Vanex Branch - Ain Zara",
+        "region_name_ar": "تسليم بفرع عين زارة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع عين زارة",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      },
+      "SBVNX": {
+        "region_code": "SBVNX",
+        "region_name_en": "Vanex Branch - Sabha",
+        "region_name_ar": "تسليم بفرع سبها",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع سبها",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "BQVNX": {
+        "region_code": "BQVNX",
+        "region_name_en": "Vanex Branch - Al-Bayda",
+        "region_name_ar": "تسليم بفرع البيضاء",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع البيضاء",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "ZVNX": {
+        "region_code": "ZVNX",
+        "region_name_en": "Vanex Branch - Zuwarah",
+        "region_name_ar": "تسليم بفرع زوارة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع زوارة",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "SQVNX": {
+        "region_code": "SQVNX",
+        "region_name_en": "Vanex Branch - Suq Al-Jumaa",
+        "region_name_ar": "تسليم بفرع سوق الجمعة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع سوق الجمعة",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      },
+      "AGVNX": {
+        "region_code": "AGVNX",
+        "region_name_en": "Vanex Branch - Ajdabiya",
+        "region_name_ar": "تسليم بفرع اجدابيا",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع اجدابيا",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "AKVNX": {
+        "region_code": "AKVNX",
+        "region_name_en": "Al-Kufra - Office Delivery",
+        "region_name_ar": "الكفرة - تسليم داخلي بالمكتب",
+        "cities": [
+          {
+            "city_name_ar": "الكفرة - تسليم داخلي بالمكتب",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "UTVNX": {
+        "region_code": "UTVNX",
+        "region_name_en": "Vanex Branch - Tripoli University",
+        "region_name_ar": "تسليم بفرع جامعة طرابلس",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع جامعة طرابلس (أ)",
+            "city_id": null,
+            "price_lyd": 0.0
+          }
+        ]
+      },
+      "ZTNVX": {
+        "region_code": "ZTNVX",
+        "region_name_en": "Vanex Branch - Zanata",
+        "region_name_ar": "تسليم بفرع زناتة",
+        "cities": [
+          {
+            "city_name_ar": "تسليم بفرع زناتة",
+            "city_id": null,
+            "price_lyd": 5.0
+          }
+        ]
+      }
+    },
+    "special service": {
+      "LTIP": {
+        "region_code": "LTIP",
+        "region_name_en": "Tripoli - Women's Delivery",
+        "region_name_ar": "طرابلس تسليم نسائي",
+        "cities": [
+          {
+            "city_name_ar": "طرابلس تسليم نسائي",
+            "city_id": null,
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "السياحية",
+            "city_id": "527",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الظهرة",
+            "city_id": "530",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "زاوية الدهماني",
+            "city_id": "531",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "النوفليين",
+            "city_id": "532",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "بن عاشور",
+            "city_id": "533",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع الجرابة",
+            "city_id": "534",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع الزاوية",
+            "city_id": "535",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع الجمهورية",
+            "city_id": "536",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع النصر",
+            "city_id": "537",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "باب بن غشير",
+            "city_id": "538",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "قرقارش",
+            "city_id": "539",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "غوط الشعال",
+            "city_id": "540",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "السراج",
+            "city_id": "541",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الدريبي",
+            "city_id": "542",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "قرجي",
+            "city_id": "543",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "قدح",
+            "city_id": "544",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "أبوسليم",
+            "city_id": "545",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الرياضية",
+            "city_id": "546",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الفلاح",
+            "city_id": "547",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "غرغور",
+            "city_id": "548",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "حي الزهور",
+            "city_id": "549",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق المطار",
+            "city_id": "550",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "الهضبة",
+            "city_id": "551",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "صلاح الدين",
+            "city_id": "552",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "خلة الفرجان",
+            "city_id": "553",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق الشوك",
+            "city_id": "554",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الفرناج",
+            "city_id": "555",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الحي الجامعي",
+            "city_id": "556",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "سيدي المصري",
+            "city_id": "557",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "راس حسن",
+            "city_id": "558",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "زناتة",
+            "city_id": "559",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "جامع الصقع",
+            "city_id": "560",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الهاني",
+            "city_id": "561",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "عرادة",
+            "city_id": "562",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الحشان",
+            "city_id": "563",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "سوق الجمعة",
+            "city_id": "564",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "كشلاف",
+            "city_id": "565",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "الغرارات",
+            "city_id": "566",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "بوستة",
+            "city_id": "567",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "طريق الشط",
+            "city_id": "568",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "معيتيقة",
+            "city_id": "569",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "11 يونيو",
+            "city_id": "570",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "السبعة",
+            "city_id": "571",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "طريق المشتل",
+            "city_id": "572",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "حي دمشق",
+            "city_id": "573",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "ولي العهد",
+            "city_id": "574",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "السدرة",
+            "city_id": "575",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "عين زارة",
+            "city_id": "576",
+            "price_lyd": 25.0
+          },
+          {
+            "city_name_ar": "طريق السور",
+            "city_id": "577",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "بوابة الجبس",
+            "city_id": "578",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "غابة النصر",
+            "city_id": "579",
+            "price_lyd": 20.0
+          },
+          {
+            "city_name_ar": "شارع الصريم",
+            "city_id": "580",
+            "price_lyd": 20.0
+          }
+        ]
+      },
+      "LBEN": {
+        "region_code": "LBEN",
+        "region_name_en": "Benghazi - Women's Delivery",
+        "region_name_ar": "بنغازي تسليم نسائي",
+        "cities": [
+          {
+            "city_name_ar": "بنغازي تسليم نسائي",
+            "city_id": null,
+            "price_lyd": 35.0
+          }
+        ]
+      },
+      "LMSR": {
+        "region_code": "LMSR",
+        "region_name_en": "Misrata - Women's Delivery",
+        "region_name_ar": "مصراتة تسليم نسائي",
+        "cities": [
+          {
+            "city_name_ar": "مصراتة تسليم نسائي",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "SVTIP": {
+        "region_code": "SVTIP",
+        "region_name_en": "Super Vanex - Tripoli",
+        "region_name_ar": "سوبر فانكس طرابلس",
+        "cities": [
+          {
+            "city_name_ar": "سوبر فانكس طرابلس",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      },
+      "BHT": {
+        "region_code": "BHT",
+        "region_name_en": "Box HT Mall",
+        "region_name_ar": "بوكس HT Mall",
+        "cities": [
+          {
+            "city_name_ar": "بوكس HT Mall",
+            "city_id": null,
+            "price_lyd": 10.0
+          }
+        ]
+      },
+      "LSBH": {
+        "region_code": "LSBH",
+        "region_name_en": "Sabha - Women's Delivery",
+        "region_name_ar": "سبها توصيل نسائي",
+        "cities": [
+          {
+            "city_name_ar": "سبها توصيل نسائي",
+            "city_id": null,
+            "price_lyd": 30.0
+          }
+        ]
+      }
+    },
+    "storage": {
+      "WTVNX": {
+        "region_code": "WTVNX",
+        "region_name_en": "Secure Storage - Tripoli",
+        "region_name_ar": "التخزين الأمن - طرابلس",
+        "cities": [
+          {
+            "city_name_ar": "التخزين الأمن - طرابلس",
+            "city_id": null,
+            "price_lyd": 0.0
+          }
+        ]
+      },
+      "WBVNX": {
+        "region_code": "WBVNX",
+        "region_name_en": "Secure Storage - Benghazi",
+        "region_name_ar": "التخزين الأمن - بنغازي",
+        "cities": [
+          {
+            "city_name_ar": "التخزين الأمن - بنغازي",
+            "city_id": null,
+            "price_lyd": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

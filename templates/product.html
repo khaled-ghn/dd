@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>المنتج | بازار بلس</title>
+  <meta name="description" content="صفحة تفاصيل المنتج - بازار بلس">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    /* Product Page Layout */
+    .product-main-layout {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 16px 0 100px;
+    }
+    @media (min-width: 768px) {
+      .product-main-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: start;
+      }
+    }
+    .product-gallery-col, .product-info-col {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Enhanced Slider with Arrow Buttons */
+    .slider-wrapper { position: relative; }
+    .slider-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      width: 38px;
+      height: 38px;
+      background: rgba(9, 13, 22, 0.85);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: var(--color-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.1rem;
+      transition: background var(--transition-fast), border-color var(--transition-fast);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+    .slider-arrow:hover {
+      background: rgba(223, 186, 73, 0.15);
+      border-color: rgba(223, 186, 73, 0.4);
+    }
+    .slider-arrow-prev { right: 10px; }
+    .slider-arrow-next { left: 10px; }
+    .slider-dots .dot { cursor: pointer; }
+
+    /* Video in slider */
+    .slide-item video {
+      max-width: 95%;
+      max-height: 95%;
+      object-fit: contain;
+      border-radius: var(--border-radius-sm);
+    }
+
+    /* Story Card */
+    .story-card {
+      background: var(--color-gray-900);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: var(--border-radius-md);
+      padding: 20px;
+    }
+    .story-badge {
+      display: inline-flex;
+      background: rgba(223, 186, 73, 0.08);
+      color: var(--color-accent);
+      font-size: 0.72rem;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: var(--border-radius-full);
+      border: 1px solid rgba(223, 186, 73, 0.15);
+      margin-bottom: 10px;
+    }
+    .story-title { font-size: 1rem; margin-bottom: 8px; }
+    .story-text { font-size: 0.9rem; color: var(--color-gray-400); line-height: 1.7; }
+    .story-list { list-style: none; display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+    .story-list-item {
+      font-size: 0.9rem;
+      color: var(--color-gray-400);
+      padding-right: 20px;
+      position: relative;
+    }
+    .story-list-item::before {
+      content: "✓";
+      position: absolute;
+      right: 0;
+      color: var(--color-accent);
+      font-weight: 700;
+    }
+
+    /* FBT Section */
+    .fbt-section {
+      background: var(--color-gray-900);
+      border: 1px solid rgba(223, 186, 73, 0.15);
+      border-radius: var(--border-radius-md);
+      padding: 20px;
+      margin-top: 20px;
+    }
+    .fbt-title { font-size: 1rem; color: var(--color-accent); margin-bottom: 4px; }
+    .fbt-subtitle { font-size: 0.8rem; color: var(--color-gray-400); margin-bottom: 16px; line-height: 1.4; }
+    .fbt-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 14px;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--border-radius-sm);
+      margin-bottom: 10px;
+      cursor: pointer;
+      transition: border-color var(--transition-fast);
+    }
+    .fbt-item:hover { border-color: rgba(223,186,73,0.25); }
+    .fbt-item.checked { border-color: rgba(223,186,73,0.4); background: rgba(223,186,73,0.04); }
+    .fbt-item img { width: 48px; height: 48px; object-fit: contain; border-radius: 6px; background: var(--color-bg); }
+    .fbt-item-info { flex-grow: 1; }
+    .fbt-item-name { font-size: 0.88rem; font-weight: 600; color: var(--color-light); }
+    .fbt-item-price { font-size: 0.82rem; color: var(--color-accent); font-weight: 700; }
+    .fbt-checkbox { width: 20px; height: 20px; accent-color: var(--color-accent); cursor: pointer; }
+    .fbt-total {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px dashed rgba(255,255,255,0.08);
+      margin-top: 4px;
+    }
+    .fbt-total-label { font-size: 0.9rem; color: var(--color-gray-300); font-weight: 700; }
+    .fbt-total-price { font-size: 1.3rem; color: var(--color-accent); font-weight: 900; }
+
+    /* Reviews */
+    .reviews-section { margin-top: 24px; }
+    .reviews-title { font-size: 1.25rem; text-align: right; margin-bottom: 16px; }
+    .reviews-slider-wrapper { position: relative; overflow: hidden; width: 100%; }
+    .reviews-slider-container {
+      display: flex;
+      scroll-snap-type: x mandatory;
+      scroll-behavior: smooth;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .reviews-slider-container::-webkit-scrollbar { display: none; }
+    .reviews-dots { display: flex; justify-content: center; gap: 8px; margin-top: 12px; }
+    .review-card {
+      background: var(--color-gray-900);
+      border: 1px solid rgba(255,255,255,0.06);
+      border-radius: var(--border-radius-md);
+      padding: 16px;
+      margin-bottom: 12px;
+    }
+    .reviewer-name { font-size: 0.95rem; font-weight: 700; color: var(--color-light); }
+    .review-text { font-size: 0.88rem; color: var(--color-gray-400); line-height: 1.6; margin: 8px 0; }
+    .reviewer-status { font-size: 0.72rem; color: var(--color-success); }
+    .reviews-slide { min-width: 100%; scroll-snap-align: start; display: flex; flex-direction: column; gap: 10px; }
+  </style>
+</head>
+<body>
+  <div class="promo-bar">⚡ عرض خاص: توصيل مجاني لباب البيت والدفع بعد المعاينة والاستلام!</div>
+
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="/Logo.png" alt="بازار بلس" class="logo-img">
+        <span class="logo-text">بازار بلس</span>
+      </div>
+      <a id="buyNowTop" href="#" class="btn-primary" style="padding: 8px 16px; font-size: 0.8rem; width: auto;">اطلب الآن</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="product-main-layout">
+      <!-- Gallery Column -->
+      <div class="product-gallery-col">
+        <div class="badge-tag"><span class="icon"></span><span id="productBadge">منتج</span></div>
+        <div class="hero-image-container"><img id="heroImage" src="" alt="" class="hero-image"></div>
+        <div class="price-box" style="margin-bottom: 0;">
+          <span class="price-label">سعر العرض الخاص:</span>
+          <div class="price-values">
+            <span id="priceNow" class="price-actual">0 د.ل</span>
+            <span id="priceWas" class="price-was">0 د.ل</span>
+          </div>
+        </div>
+        <a id="buyNowMain" href="#" class="btn-primary">اطلب الآن والدفع عند الاستلام</a>
+
+        <div class="gallery-section" style="padding: 16px; margin-bottom: 0;">
+          <h3 class="gallery-title" style="font-size: 1rem; margin-bottom: 12px;">تفاصيل ومقاطع المنتج</h3>
+          <div class="slider-wrapper">
+            <button class="slider-arrow slider-arrow-prev" id="sliderPrev">&#8250;</button>
+            <button class="slider-arrow slider-arrow-next" id="sliderNext">&#8249;</button>
+            <div class="slider-wrapper" style="border-radius: var(--border-radius-md);">
+              <div class="slider-container" id="imageSlider"></div>
+            </div>
+          </div>
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+
+      <!-- Info Column -->
+      <div class="product-info-col">
+        <h1 id="productTitle" class="hero-title" style="text-align: right; font-size: 1.75rem; margin-bottom: 8px;">المنتج</h1>
+        <p id="productDescription" style="font-size: 1rem; color: var(--color-accent); font-weight: 700; margin-bottom: 16px;">وصف مختصر</p>
+
+        <div class="story-card">
+          <span class="story-badge">لماذا هذا المنتج؟</span>
+          <h3 class="story-title">نظرة سريعة على المنتج</h3>
+          <p id="productStory" class="story-text"></p>
+        </div>
+
+        <div class="highlights-grid" id="highlightsGrid" style="margin-top: 24px; margin-bottom: 24px;"></div>
+
+        <div class="story-card">
+          <span class="story-badge">المميزات</span>
+          <h3 class="story-title">ما الذي يميز هذا المنتج؟</h3>
+          <ul class="story-list">
+            <li class="story-list-item">توصيل مجاني لجميع مدن ليبيا والدفع عند الاستلام.</li>
+            <li class="story-list-item">ضمان استبدال المقاس مجاناً إن لم يناسبك.</li>
+            <li class="story-list-item">جودة عالية وخامة طبية مع مرونة ممتازة.</li>
+          </ul>
+        </div>
+
+        <!-- Frequently Bought Together -->
+        <div class="fbt-section" id="fbtSection">
+          <h3 class="fbt-title">🎁 يُشترى معه عادةً (وفّر أكثر!)</h3>
+          <p class="fbt-subtitle">اختر منتجاً إضافياً مع طلبك واحصل على خصم تلقائي 15% على الإجمالي!</p>
+          <div id="fbtList"></div>
+          <div class="fbt-total">
+            <span class="fbt-total-label">إجمالي اختيارك:</span>
+            <span class="fbt-total-price" id="fbtTotalPrice">0 د.ل</span>
+          </div>
+          <a id="buyBundleBtn" href="#" class="btn-primary" style="margin-top: 14px; display: none;">
+            <span>اطلب الباقة المخصصة والدفع عند الاستلام</span>
+          </a>
+        </div>
+
+        <div class="reviews-section">
+          <h2 class="reviews-title">تقييمات زبائننا</h2>
+          <div class="reviews-slider-wrapper">
+            <div class="reviews-slider-container" id="reviewsSlider"></div>
+            <div class="reviews-dots" id="reviewsDots"></div>
+          </div>
+        </div>
+
+        <div class="faq-section" style="margin-top: 24px; margin-bottom: 0;">
+          <h2 class="faq-title" style="text-align: right; font-size: 1.25rem;">الأسئلة الشائعة</h2>
+          <div class="accordion-item"><div class="accordion-header"><span>هل المنتج متوفر بأحجام مختلفة؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">نعم، يمكنك اختيار المقاس المناسب من صفحة الطلب.</div></div></div>
+          <div class="accordion-item"><div class="accordion-header"><span>هل التوصيل مجاني؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">نعم، نقدم توصيل مجاني في أغلب المدن مع الدفع عند الاستلام.</div></div></div>
+          <div class="accordion-item"><div class="accordion-header"><span>كم يستغرق التوصيل؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">عادة خلال 24–48 ساعة حسب المدينة.</div></div></div>
+          <div class="accordion-item"><div class="accordion-header"><span>هل يمكن الاستبدال أو الإرجاع؟</span><span class="accordion-icon">▼</span></div><div class="accordion-content"><div class="accordion-body">نعم، نضمن الاستبدال المجاني في حال وجود أي مشكلة بالمقاس أو الجودة.</div></div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Sticky Footer -->
+  <div class="sticky-footer" id="stickyFooter">
+    <div class="footer-price-col">
+      <span class="footer-label" id="footerLabel">سعر المنتج:</span>
+      <span id="footerPrice" class="footer-price">0 د.ل</span>
+    </div>
+    <a id="buyNowFooter" href="#" class="btn-primary">اطلب الآن</a>
+  </div>
+
+  <script src="/assets/js/products.js"></script>
+  <script src="/assets/js/reviews.js"></script>
+  <script src="/assets/js/main.js"></script>
+  <script>
+    (async function () {
+      // Get product slug from Flask template variable (falls back to URL param)
+      const slugFromServer = "{{ slug_or_id }}";
+      const params = new URLSearchParams(window.location.search);
+      const slug = (slugFromServer && slugFromServer !== 'None') ? slugFromServer : (params.get('slug') || params.get('product') || 'ankle-sleeve');
+
+      // Try local products.js first, then API fallback
+      let product = window.PRODUCTS[slug];
+
+      if (!product) {
+        // Fetch from API
+        try {
+          const allProducts = await fetch('/api/products').then(r => r.json());
+          const found = allProducts.find(p => p.slug === slug || String(p.id) === String(slug) || p.name === slug);
+          if (found) {
+            product = {
+              name: found.name,
+              price: found.price,
+              wasPrice: found.was_price,
+              image: found.image_url,
+              sizes: found.sizes || [],
+              inStock: found.in_stock,
+              badge: found.badge,
+              description: found.description,
+              gallery: found.gallery || [found.image_url.split('/')[1] || 'Main.png'],
+              highlights: found.highlights || [],
+              related_ids: found.related_product_ids || []
+            };
+          }
+        } catch(e) {}
+      }
+
+      if (!product) {
+        window.location.href = '/';
+        return;
+      }
+
+      // Set page meta
+      document.title = product.name + ' | بازار بلس';
+      document.querySelector('meta[name="description"]').setAttribute('content', product.description || '');
+
+      // Fill UI
+      document.getElementById('productBadge').textContent = product.badge || 'منتج مميز';
+      document.getElementById('productTitle').textContent = product.name;
+      document.getElementById('productDescription').textContent = product.description || '';
+      document.getElementById('productStory').textContent = (product.description || '') + ' هذا المنتج مناسب لمن يبحث عن دعم متين وراحة أثناء الحركة اليومية أو التمرين.';
+      document.getElementById('priceNow').textContent = product.price + ' د.ل';
+      document.getElementById('priceWas').textContent = (product.wasPrice || '') + ' د.ل';
+      document.getElementById('footerPrice').textContent = product.price + ' د.ل';
+      document.getElementById('heroImage').src = '/' + product.image;
+      document.getElementById('heroImage').alt = product.name;
+
+      const buyHref = '/checkout.html?product=' + slug;
+      document.getElementById('buyNowTop').href = buyHref;
+      document.getElementById('buyNowMain').href = buyHref;
+      document.getElementById('buyNowFooter').href = buyHref;
+
+      // Gallery Slider
+      const imageFolder = (product.image || '').split('/')[0] || slug;
+      const galleryImages = product.gallery && product.gallery.length > 0
+        ? product.gallery
+        : ['Main.png'];
+
+      const slider = document.getElementById('imageSlider');
+      const dotsContainer = document.getElementById('sliderDots');
+      slider.innerHTML = '';
+      dotsContainer.innerHTML = '';
+
+      galleryImages.forEach((imgFile, idx) => {
+        const item = document.createElement('div');
+        item.className = 'slide-item';
+        const isVideo = /\.(mp4|webm|ogg)$/i.test(imgFile);
+        if (isVideo) {
+          item.innerHTML = `<video src="/${imageFolder}/${imgFile}" controls playsinline muted loop></video>`;
+        } else {
+          item.innerHTML = `<img src="/${imageFolder}/${imgFile}" alt="${product.name} ${idx + 1}">`;
+        }
+        slider.appendChild(item);
+
+        const dot = document.createElement('span');
+        dot.className = 'dot' + (idx === 0 ? ' active' : '');
+        dot.addEventListener('click', () => {
+          scrollToSlide(idx);
+        });
+        dotsContainer.appendChild(dot);
+      });
+
+      function scrollToSlide(index) {
+        const slideWidth = slider.clientWidth;
+        slider.scrollTo({ left: index * slideWidth, behavior: 'smooth' });
+      }
+
+      // Slider arrow buttons
+      const sliderPrev = document.getElementById('sliderPrev');
+      const sliderNext = document.getElementById('sliderNext');
+
+      function getCurrentSlide() {
+        return Math.round(slider.scrollLeft / (slider.clientWidth || 1));
+      }
+
+      sliderPrev.addEventListener('click', () => {
+        const cur = getCurrentSlide();
+        scrollToSlide(Math.max(0, cur - 1));
+      });
+      sliderNext.addEventListener('click', () => {
+        const cur = getCurrentSlide();
+        scrollToSlide(Math.min(galleryImages.length - 1, cur + 1));
+      });
+
+      slider.addEventListener('scroll', () => {
+        const idx = getCurrentSlide();
+        document.querySelectorAll('#sliderDots .dot').forEach((dot, i) => {
+          dot.classList.toggle('active', i === idx);
+        });
+      });
+
+      // Highlights
+      const highlightsGrid = document.getElementById('highlightsGrid');
+      const highlightIcons = ['🦶', '💪', '🏃', '🌡️', '✓', '🧶', '✋', '🦴'];
+      highlightsGrid.innerHTML = (product.highlights || []).map((item, i) => `
+        <div class="highlight-card">
+          <div class="highlight-icon">${highlightIcons[i % highlightIcons.length]}</div>
+          <span class="highlight-title">${item}</span>
+        </div>
+      `).join('');
+
+      // Frequently Bought Together (FBT)
+      let fbtChecked = [];
+      let mainPrice = product.price;
+
+      function updateFbtTotal() {
+        const addonsTotal = fbtChecked.reduce((sum, id) => {
+          const p = window.PRODUCTS[id];
+          return sum + (p ? p.price : 0);
+        }, 0);
+        const total = mainPrice + addonsTotal;
+        const discounted = fbtChecked.length > 0 ? Math.round(total * 0.85) : total;
+        document.getElementById('fbtTotalPrice').textContent = discounted + ' د.ل';
+
+        const buyBtn = document.getElementById('buyBundleBtn');
+        if (fbtChecked.length > 0) {
+          buyBtn.style.display = 'flex';
+          buyBtn.href = buyHref + '&addons=' + fbtChecked.join(',');
+        } else {
+          buyBtn.style.display = 'none';
+        }
+      }
+
+      const fbtList = document.getElementById('fbtList');
+      const relatedIds = product.related_ids || Object.keys(window.PRODUCTS).filter(k => k !== slug).slice(0, 3);
+
+      relatedIds.forEach(relId => {
+        const relProd = window.PRODUCTS[relId];
+        if (!relProd || relId === slug) return;
+
+        const item = document.createElement('div');
+        item.className = 'fbt-item';
+        item.innerHTML = `
+          <input type="checkbox" class="fbt-checkbox" id="fbt_${relId}" value="${relId}">
+          <img src="/${relProd.image}" alt="${relProd.name}">
+          <div class="fbt-item-info">
+            <div class="fbt-item-name">${relProd.name}</div>
+            <div class="fbt-item-price">+ ${relProd.price} د.ل</div>
+          </div>
+          <span style="font-size: 0.75rem; color: var(--color-gray-500); text-decoration: line-through;">${relProd.wasPrice} د.ل</span>
+        `;
+        const chk = item.querySelector('.fbt-checkbox');
+        chk.addEventListener('change', () => {
+          if (chk.checked) {
+            fbtChecked.push(relId);
+            item.classList.add('checked');
+          } else {
+            fbtChecked = fbtChecked.filter(x => x !== relId);
+            item.classList.remove('checked');
+          }
+          updateFbtTotal();
+        });
+        item.addEventListener('click', (e) => {
+          if (e.target !== chk) chk.click();
+        });
+        fbtList.appendChild(item);
+      });
+
+      updateFbtTotal();
+
+      // Track
+      trackViewContent(slug, product.price);
+      startCountdownTimers();
+      setupFaqs();
+      setupCarousels();
+      setupStickyFooter();
+
+      // Reviews
+      if (typeof PRODUCT_REVIEWS !== 'undefined') {
+        renderDynamicReviews(slug);
+      }
+    })();
+  </script>
+</body>
+</html>

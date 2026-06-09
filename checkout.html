@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تأكيد الطلب | بازار بلس</title>
+  <meta name="description" content="أكمل بيانات طلبك لتأكيد التوصيل المجاني والدفع عند الاستلام في ليبيا">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Promo Banner -->
+  <div class="promo-bar">
+    ⚡ عرض خاص: توصيل مجاني لباب البيت والدفع بعد المعاينة والاستلام!
+  </div>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      <div class="logo-container">
+        <img src="Logo.png" alt="بازار بلس" class="logo-img">
+        <span class="logo-text">بازار بلس</span>
+      </div>
+      <a href="index.html" class="logo-subtext" style="color: var(--color-accent); font-weight: 700; font-size: 0.85rem;">← رجوع للرئيسية</a>
+    </div>
+  </header>
+
+  <!-- Title Section -->
+  <section class="hero-section" style="padding: 24px 0 8px; background: none;">
+    <div class="container">
+      <h1 class="hero-title" style="font-size: 1.6rem;">تأكيد طلبك</h1>
+      <p class="hero-subtitle" style="margin-bottom: 0;">الرجاء إدخال تفاصيل الشحن لإرسال طلبك فوراً</p>
+    </div>
+  </section>
+
+  <!-- Checkout Content -->
+  <main class="container">
+    <div class="checkout-container">
+      
+      <!-- Right Column: COD Form -->
+      <div class="form-section" style="margin: 0; padding: 24px 20px;">
+        <h2 class="form-title" style="font-size: 1.2rem; text-align: right; margin-bottom: 4px;">بيانات الشحن</h2>
+        <p class="form-subtitle" style="text-align: right; margin-bottom: 20px;">تأكيد الطلب يستغرق أقل من 30 ثانية</p>
+        
+        <form id="checkoutForm" novalidate>
+          
+          <div class="form-group">
+            <label for="fullName" class="form-label">الاسم بالكامل</label>
+            <input type="text" id="fullName" class="form-input" placeholder="مثال: يوسف خالد الورفلي" required minlength="4">
+            <span class="form-error">يرجى كتابة الاسم الثلاثي بالكامل لتسهيل عملية الشحن.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber" class="form-label">رقم الهاتف</label>
+            <input type="tel" id="phoneNumber" class="form-input" placeholder="مثال: 091XXXXXXX" pattern="^09[124589]\d{7}$" required>
+            <span class="form-error">يرجى إدخال رقم هاتف ليبي صحيح مكون من 10 أرقام (مدار أو ليبيانا).</span>
+          </div>
+
+          <div class="form-group">
+            <label for="city" class="form-label">المدينة</label>
+            <div class="select-wrapper">
+              <select id="city" class="form-input select" required>
+                <option value="" disabled selected>اختر مدينتك...</option>
+              </select>
+            </div>
+            <span class="form-error">يرجى اختيار مدينة الشحن.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="size" class="form-label">المقاس</label>
+            <div class="select-wrapper">
+              <select id="size" class="form-input select">
+                <option value="" disabled selected>اختر المقاس...</option>
+              </select>
+            </div>
+            <span class="form-error">يرجى اختيار المقاس قبل تأكيد الطلب.</span>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">الكمية المطلوبة</label>
+            <div class="quantity-wrapper">
+              <button type="button" class="qty-btn" id="qtyMinus">-</button>
+              <span class="qty-val" id="qtyVal">1</span>
+              <button type="button" class="qty-btn" id="qtyPlus">+</button>
+            </div>
+          </div>
+
+          <!-- Custom Bundle Builder Section -->
+          <div class="bundle-builder-section" id="bundleBuilderSection" style="margin-top: 24px; border-top: 1px dashed rgba(255,255,255,0.08); padding-top: 20px;">
+            <h3 style="font-size: 1rem; color: var(--color-accent); margin-bottom: 4px; text-align: right;">📦 كوّن باقتك الخاصة ووفر أكثر!</h3>
+            <p style="font-size: 0.8rem; color: var(--color-gray-400); margin-bottom: 16px; text-align: right; line-height: 1.4;">أضف أي منتجات أخرى لطلبك واحصل على خصم فوري: 15% خصم عند اختيار منتجين، و25% عند اختيار 3 منتجات أو أكثر!</p>
+            <div class="bundle-items-list" id="bundleItemsList" style="display: grid; grid-template-columns: 1fr; gap: 12px;">
+              <!-- Dynamic Checklist of other products -->
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary" style="margin-top: 24px; padding: 14px;">
+            <span>✓ تأكيد الطلب</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Left Column: Order Summary Box (Double Bezel) -->
+      <div class="outer-bezel">
+        <div class="inner-core" style="padding: 20px;">
+          <h3 style="font-size: 1rem; border-bottom: 1px solid rgba(255, 255, 255, 0.08); padding-bottom: 10px; margin-bottom: 12px; color: var(--color-accent);">تفاصيل طلبك</h3>
+          
+          <div style="display: flex; gap: 16px; align-items: center; margin-bottom: 12px;">
+            <img id="summaryImage" src="" alt="" style="width: 70px; height: 70px; object-fit: contain; border-radius: var(--border-radius-sm); background: var(--color-bg); border: 1px solid rgba(255, 255, 255, 0.06); padding: 4px;">
+            <div style="flex-grow: 1;">
+              <h4 id="summaryTitle" style="font-size: 1rem; color: var(--color-light);">اسم المنتج</h4>
+              <span id="summaryQtyText" style="font-size: 0.85rem; color: var(--color-gray-400);">الكمية: 1</span>
+            </div>
+          </div>
+
+          <!-- Dynamic Products List (for bundle items) -->
+          <div id="summaryProductsList" style="display: flex; flex-direction: column; gap: 10px; border-top: 1px dashed rgba(255, 255, 255, 0.08); padding-top: 10px; margin-top: 10px;">
+            <!-- Bundle items will appear here -->
+          </div>
+
+          <!-- Upsell Row (Hidden by default, shown if accepted) -->
+          <div id="upsellSummaryRow" style="display: none; justify-content: space-between; align-items: center; border-top: 1px dashed rgba(255, 255, 255, 0.08); padding-top: 10px; margin-top: 10px;">
+            <span id="upsellSummaryName" style="font-size: 0.85rem; color: var(--color-success);">عرض إضافي: المنتج</span>
+            <span id="upsellSummaryPrice" style="font-size: 0.95rem; font-weight: 700; color: var(--color-accent);">0 د.ل</span>
+          </div>
+
+          <!-- Pricing Breakdown Rows -->
+          <div id="pricingBreakdown" style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 12px; margin-top: 12px; display: flex; flex-direction: column; gap: 8px;">
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: var(--color-gray-400);">سعر المنتجات:</span>
+              <span id="subtotalPrice" style="font-size: 0.95rem; color: var(--color-light);">0 د.ل</span>
+            </div>
+            <div id="bundleDiscountRow" style="display: none; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: var(--color-success);">خصم الباقة للتوفير:</span>
+              <span id="bundleDiscountPrice" style="font-size: 0.95rem; font-weight: 700; color: var(--color-success);">-0 د.ل</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+              <span style="font-size: 0.85rem; color: var(--color-gray-400);">تكلفة التوصيل:</span>
+              <span id="shippingPriceText" style="font-size: 0.95rem; color: var(--color-light);">لم تحدد بعد</span>
+            </div>
+          </div>
+
+          <div style="display: flex; justify-content: space-between; align-items: center; border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 12px; margin-top: 12px;">
+            <span style="font-size: 0.95rem; font-weight: 700; color: var(--color-light);">إجمالي الحساب:</span>
+            <span id="totalPrice" style="font-size: 1.5rem; font-weight: 900; color: var(--color-accent);">0 د.ل</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- 1. Upsell Native Dialog Modal -->
+  <dialog id="upsellModal">
+    <div class="dialog-header">
+      <h3 class="dialog-title">🎁 عرض خاص ليك لمرة واحدة بس!</h3>
+      <button class="dialog-close" id="btnUpsellClose">×</button>
+    </div>
+    <div style="text-align: center; display: flex; flex-direction: column; gap: 14px; align-items: center;">
+      <div style="width: 140px; height: 140px; border-radius: var(--border-radius-md); background: var(--color-bg); display: flex; align-items: center; justify-content: center; border: 1px solid rgba(255,255,255,0.06); padding: 8px;">
+        <img id="upsellImg" src="" alt="منتج العرض" style="max-width: 100%; max-height: 100%; object-fit: contain;">
+      </div>
+      <h4 id="upsellName" style="font-size: 1rem; color: var(--color-light);">اسم منتج العرض الإضافي</h4>
+      <p style="font-size: 0.85rem; color: var(--color-gray-400); line-height: 1.5; padding: 0 10px;">
+        خصم خاص بقيمة 30 دينار عند إضافة هذا المنتج لطلبك الآن!
+      </p>
+      
+      <div style="display: flex; gap: 12px; align-items: center; margin: 4px 0;">
+        <span style="font-size: 0.85rem; color: var(--color-gray-500);">بدل:</span>
+        <span id="upsellWasPrice" style="text-decoration: line-through; color: var(--color-gray-500); font-weight: 700;">0 د.ل</span>
+        <span style="font-size: 0.95rem; color: var(--color-success); font-weight: 800;">الآن بـ:</span>
+        <span id="upsellNowPrice" style="font-size: 1.3rem; font-weight: 900; color: var(--color-accent);">0 د.ل</span>
+      </div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 10px; width: 100%; margin-top: 10px;">
+        <button id="btnUpsellAccept" class="btn-primary" style="padding: 12px; font-size: 1rem;">✅ أضف للطلب ووفر 30 دينار</button>
+        <button id="btnUpsellDecline" style="background: none; border: 1px solid rgba(255,255,255,0.1); color: var(--color-gray-400); padding: 10px; border-radius: var(--border-radius-sm); font-family: 'Tajawal', sans-serif; cursor: pointer; font-size: 0.85rem;">❌ لا شكراً، أريد الطلب الأساسي فقط</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- 2. Submission Actions Dialog -->
+  <dialog id="actionSubmitDialog">
+    <div class="dialog-header">
+      <h3 class="dialog-title" style="color: var(--color-success);">تم تسجيل بياناتك بنجاح!</h3>
+    </div>
+    <div style="text-align: center; display: flex; flex-direction: column; gap: 16px; align-items: center;">
+      <p style="font-size: 0.9rem; color: var(--color-gray-300); line-height: 1.6;">
+        يرجى اختيار طريقة إرسال الطلب لتأكيد الحجز فوراً مع قسم المبيعات:
+      </p>
+
+      <div style="display: flex; flex-direction: column; gap: 12px; width: 100%;">
+        <!-- WhatsApp Submit -->
+        <button id="btnSubmitWhatsapp" class="btn-whatsapp">
+          <svg style="width: 20px; height: 20px; fill: currentColor;" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.035-4.442l.338.201c1.616.96 3.475 1.467 5.372 1.468 5.795 0 10.51-4.721 10.514-10.516.002-2.807-1.09-5.446-3.076-7.437C17.252 1.285 14.618.192 11.815.19 6.02.19 1.303 4.91 1.299 10.706c-.001 1.83.478 3.616 1.39 5.205l.236.408-.98 3.578 3.666-.961zm10.771-7.426c-.295-.148-1.748-.862-2.013-.959-.267-.097-.461-.146-.656.148-.195.293-.753.959-.923 1.153-.17.195-.341.219-.636.072-1.393-.696-2.296-1.042-3.238-1.662-.254-.167-.478-.372-.667-.605-.295-.365.111-.328.384-.87.086-.173.043-.324-.022-.471-.064-.148-.461-1.111-.631-1.52-.167-.399-.336-.345-.461-.351-.121-.006-.26-.008-.399-.008-.139 0-.365.052-.556.26-.191.208-.731.715-.731 1.743 0 1.028.749 2.023.854 2.164.106.142 1.474 2.251 3.571 3.155.5.216.89.345 1.196.442.502.16 1.018.137 1.4.08.427-.063 1.748-.715 1.996-1.405.249-.69.249-1.282.174-1.405-.075-.122-.268-.195-.563-.343z"/></svg>
+          <span>تأكيد الطلب فوري عبر الواتساب</span>
+        </button>
+
+        <div style="display: flex; align-items: center; justify-content: center; gap: 8px; margin: 4px 0;">
+          <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); flex-grow: 1;">
+          <span style="font-size: 0.75rem; color: var(--color-gray-500);">أو أرسل هاتفياً</span>
+          <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); flex-grow: 1;">
+        </div>
+
+        <!-- Email Submit -->
+        <button id="btnSubmitEmail" style="background: none; border: 1px solid var(--color-accent); color: var(--color-accent); padding: 12px; border-radius: var(--border-radius-md); font-family: 'Cairo', sans-serif; cursor: pointer; font-size: 0.95rem; font-weight: 700; transition: background var(--transition-fast);">
+          ✓ اطلب وسنتصل بك هاتفياً للتأكيد
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- External libraries -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="assets/js/cities.js"></script>
+  <script src="assets/js/products.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // Initialize EmailJS public key if available
+    if (CONFIG.EMAILJS_PUBLIC_KEY !== 'user_placeholder') {
+      emailjs.init(CONFIG.EMAILJS_PUBLIC_KEY);
+    }
+    
+    // Start checkout controller
+    initCheckoutPage();
+    
+    // Setup closes for dialogs
+    document.getElementById('btnUpsellClose').onclick = () => {
+      document.getElementById('upsellModal').close();
+      submitOrder();
+    };
+  </script>
+</body>
+</html>

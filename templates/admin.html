@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>بازار بلس | الإدارة</title>
+  <link rel="stylesheet" href="/static/global.css" />
+  <style>
+    .admin-section { margin: 2rem 0; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { padding: 0.5rem; border: 1px solid #ccc; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/static/Logo.png" alt="Vanex logo" class="logo" />
+    <nav>
+      <a href="/">Home</a>
+      <a href="/admin.html">Admin</a>
+    </nav>
+  </header>
+  <main>
+    <div id="login-section">
+      <h1>تسجيل دخول الإدارة</h1>
+      <input type="password" id="password" placeholder="كلمة المرور" />
+      <button id="login-btn">دخول</button>
+      <p id="login-error" style="color:red;"></p>
+    </div>
+
+    <div id="admin-panel" class="hidden">
+      <h1>لوحة الإدارة</h1>
+      <button id="logout-btn">خروج</button>
+
+      <div class="admin-section">
+        <h2>إضافة / تعديل منتج</h2>
+        <form id="product-form">
+          <input type="hidden" id="product-id" value="" />
+          <label>الاسم: <input type="text" id="prod-name" required /></label><br />
+          <label>السعر: <input type="number" step="0.01" id="prod-price" required /></label><br />
+          <label>السعر القديم: <input type="number" step="0.01" id="prod-was-price" /></label><br />
+          <label>المقاسات (مفصولة بفاصلة): <input type="text" id="prod-sizes" /></label><br />
+          <label>الوصف: <input type="text" id="prod-description" /></label><br />
+          <label>الشارة: <input type="text" id="prod-badge" value="متوفر" /></label><br />
+          <label>منتجات ذات صلة (أرقام مفصولة): <input type="text" id="prod-related" /></label><br />
+          <label>رابط الصورة: <input type="text" id="prod-image" /></label><br />
+          <button type="submit">حفظ المنتج</button>
+        </form>
+      </div>
+
+      <div class="admin-section">
+        <h2>المنتجات الحالية</h2>
+        <table>
+          <thead><tr><th>Name</th><th>Price</th><th>Sizes</th><th>Actions</th></tr></thead>
+          <tbody id="product-table-body"></tbody>
+        </table>
+      </div>
+
+      <div class="admin-section">
+        <h2>الطلبات</h2>
+        <table>
+          <thead><tr><th>ID</th><th>Customer</th><th>Address</th><th>Items</th><th>Total</th><th>Date</th></tr></thead>
+          <tbody id="order-table-body"></tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const loginSection = document.getElementById('login-section');
+    const adminPanel = document.getElementById('admin-panel');
+    const loginError = document.getElementById('login-error');
+
+    async function checkAdmin() {
+      const res = await fetch('/api/orders');
+      if (res.ok) {
+        loginSection.classList.add('hidden');
+        adminPanel.classList.remove('hidden');
+        loadProducts();
+        loadOrders();
+      } else {
+        loginSection.classList.remove('hidden');
+        adminPanel.classList.add('hidden');
+      }
+    }
+    checkAdmin();
+
+    document.getElementById('login-btn').addEventListener('click', async () => {
+      const password = document.getElementById('password').value;
+      const res = await fetch('/api/admin/login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ password })
+      });
+      if (res.ok) {
+        loginSection.classList.add('hidden');
+        adminPanel.classList.remove('hidden');
+        loadProducts();
+        loadOrders();
+        loginError.textContent = '';
+      } else {
+        loginError.textContent = 'كلمة المرور غير صحيحة';
+      }
+    });
+
+    document.getElementById('logout-btn').addEventListener('click', async () => {
+      await fetch('/api/admin/logout', { method: 'POST' });
+      loginSection.classList.remove('hidden');
+      adminPanel.classList.add('hidden');
+    });
+
+    async function loadProducts() {
+      const res = await fetch('/api/products');
+      const products = await res.json();
+      const tbody = document.getElementById('product-table-body');
+      tbody.innerHTML = '';
+      products.forEach(p => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${p.name}</td>
+          <td>$${Number(p.price).toFixed(2)}</td>
+          <td>${p.sizes ? p.sizes.join(', ') : '-'}</td>
+          <td>
+            <button onclick="editProduct(${p.id})">Edit</button>
+            <button onclick="deleteProduct(${p.id})">Delete</button>
+          </td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+
+    window.editProduct = async (id) => {
+      const res = await fetch('/api/products');
+      const products = await res.json();
+      const product = products.find(p => p.id === id);
+      if (!product) return;
+      document.getElementById('product-id').value = product.id;
+      document.getElementById('prod-name').value = product.name;
+      document.getElementById('prod-price').value = product.price;
+      document.getElementById('prod-was-price').value = product.was_price || 0;
+      document.getElementById('prod-sizes').value = product.sizes ? product.sizes.join(',') : '';
+      document.getElementById('prod-description').value = product.description || '';
+      document.getElementById('prod-badge').value = product.badge || 'متوفر';
+      document.getElementById('prod-related').value = (product.related_product_ids || []).join(',');
+      document.getElementById('prod-image').value = product.image_url || '';
+    };
+
+    window.deleteProduct = async (id) => {
+      if (!confirm('هل تريد حذف هذا المنتج؟')) return;
+      const res = await fetch(`/api/products/${id}`, { method: 'DELETE' });
+      if (res.ok) loadProducts();
+    };
+
+    document.getElementById('product-form').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const id = document.getElementById('product-id').value;
+      const name = document.getElementById('prod-name').value;
+      const price = document.getElementById('prod-price').value;
+      const was_price = document.getElementById('prod-was-price').value;
+      const sizesRaw = document.getElementById('prod-sizes').value;
+      const sizes = sizesRaw ? sizesRaw.split(',').map(s => s.trim()).filter(Boolean) : null;
+      const description = document.getElementById('prod-description').value;
+      const badge = document.getElementById('prod-badge').value;
+      const relatedRaw = document.getElementById('prod-related').value;
+      const related_product_ids = relatedRaw ? relatedRaw.split(',').map(x => x.trim()).filter(Boolean).map(Number) : [];
+      const image_url = document.getElementById('prod-image').value;
+      const productData = { name, price: parseFloat(price), was_price: parseFloat(was_price || 0), sizes, description, badge, related_product_ids, image_url };
+
+      if (id) {
+        await fetch(`/api/products/${id}`, { method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(productData) });
+      } else {
+        await fetch('/api/products', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(productData) });
+      }
+      document.getElementById('product-form').reset();
+      document.getElementById('product-id').value = '';
+      loadProducts();
+    });
+
+    async function loadOrders() {
+      const res = await fetch('/api/orders');
+      const orders = await res.json();
+      const tbody = document.getElementById('order-table-body');
+      tbody.innerHTML = '';
+      orders.forEach(o => {
+        const tr = document.createElement('tr');
+        tr.innerHTML = `
+          <td>${o.id}</td>
+          <td>${o.customer_name}</td>
+          <td>${o.customer_address}</td>
+          <td>${o.items.map(i => `${i.name} x${i.quantity} (${i.size || 'مقاس واحد'})`).join(', ')}</td>
+          <td>$${Number(o.total).toFixed(2)}</td>
+          <td>${new Date(o.created_at).toLocaleString()}</td>
+        `;
+        tbody.appendChild(tr);
+      });
+    }
+  </script>
+</body>
+</html>
